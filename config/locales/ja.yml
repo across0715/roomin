@@ -1,0 +1,20 @@
+ja:
+  #共通で使う言葉
+  dictionary:
+    words:
+      hello: 'こんにちは'
+  activerecord:
+    #Model名
+    model:
+      user: 'ユーザー'
+    #カラム名
+    attributes:
+      user_name: 'ユーザーネーム'
+      password: 'パスワード'
+  #viewごとに設定
+  users:
+    show:
+      profile: 'プロフィール'
+      picture: '写真'
+    form:
+      required_field: '必須項目'
