@@ -5,7 +5,13 @@ class HomeController < ApplicationController
     @user = User.new
   end
 
+  def new
+  end
+
   def create
+  end
+
+  def show
   end
 
   private

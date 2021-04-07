@@ -1,5 +1,18 @@
 <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
 <%= link_to "ログイン",new_user_session_path, method: :get %>
-<h1>ルームサービスアプリです</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<h2>言語を選択してください</h2>
+<h1>備品リスト</h1>
+<section id="in_room">
+  <h2>部屋にある物</h2>
+  <%= image_tag 'room/pillow.jpg' %>
+</section>
+<section id="in_bath">
+  <h2>風呂場にある物</h2>
+  <%= image_tag 'room/tooth_brush.jpg' %>
+</section>
+<section id="at_counter">
+  <h2>カウンタでもらえます</h2>
+  <%= image_tag 'room/scissors.jpg' %>
+</section>
+<section id="to_ask">
+  <h2>お問い合わせ</h2>
+</section>
