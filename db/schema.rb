@@ -17,9 +17,8 @@ ActiveRecord::Schema.define(version: 2021_04_06_083857) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "room_number", null: false
-    t.string "name", null: false
-    t.string "password", null: false
+    t.integer "room_number"
+    t.string "name"
     t.boolean "used", default: false, null: false
     t.boolean "available", default: true, null: false
     t.datetime "activated_at", null: false
