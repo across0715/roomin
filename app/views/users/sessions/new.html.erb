@@ -2,11 +2,11 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :room_number %><br />
-    <%= f.password_field :room_number %>
+    <%= f.number_field :room_number, required: true, min: 100, max: 9999 %>
   </div>
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.password_field :name %>
+    <%= f.text_field :name, required: true %>
   </div>
   <div class="field">
     <%= f.label :password %><br />
