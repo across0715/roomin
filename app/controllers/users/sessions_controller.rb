@@ -11,16 +11,18 @@ class Users::SessionsController < Devise::SessionsController
   # POST /resource/sign_in
   def create
     self.resource = warden.authenticate!(auth_options)
-    # if !resource.available || resource.activated_at < Time.current
-    #   flash[:alert] = "このアカウントは無効です"
-    #   redirect_to new_user_session_path and return
-    # end
     set_flash_message!(:notice, :signed_in)
     sign_in(resource_name, resource)
-    resource.update!(
-      used: true,
-      activated_at: Time.current + 1.week,
-    )
+
+    unless resource.used
+      resource.update!(
+        room_number: params[:user][:room_number],
+        name: params[:user][:name],
+        used: true,
+        activated_at: Time.current + 1.week,
+      )
+    end
+
     yield resource if block_given?
     respond_with resource, location: after_sign_in_path_for(resource)
   end

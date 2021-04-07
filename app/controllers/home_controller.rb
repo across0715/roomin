@@ -6,13 +6,6 @@ class HomeController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
-    if @user.save
-      @user.update(used: "true")
-      redirect_to :index
-    else
-      render root_path
-    end
   end
 
   private

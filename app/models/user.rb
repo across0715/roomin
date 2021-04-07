@@ -8,4 +8,18 @@ class User < ApplicationRecord
   def insert_activated_at
     self.activated_at = Time.current + 1.month
   end
+
+  def active_for_authentication?
+    super && account_active?
+  end
+
+  def inactive_message
+    account_active? ? super : :account_inactive
+  end
+
+  private
+
+  def account_active?
+    self.available && self.activated_at >= Time.current
+  end
 end

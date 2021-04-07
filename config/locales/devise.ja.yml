@@ -7,6 +7,7 @@ ja:
     failure:
       already_authenticated: 'すでにログインしています。'
       inactive: 'アカウントが有効化されていません。メールに記載された手順にしたがって、アカウントを有効化してください。'
+      account_inactive: '無効なアカウントです。'
       invalid: '%{authentication_keys} もしくはパスワードが不正です。'
       locked: 'あなたのアカウントは凍結されています。'
       last_attempt: 'あなたのアカウントが凍結される前に、複数回の操作がおこなわれています。'
