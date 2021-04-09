@@ -10,16 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_09_024515) do
-
-  create_table "products", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "category", null: false
-    t.string "name", null: false
-    t.string "image", null: false
-    t.boolean "available", default: true, null: false
-  end
+ActiveRecord::Schema.define(version: 2021_04_06_083857) do
 
   create_table "users", force: :cascade do |t|
     t.string "encrypted_password", default: "", null: false

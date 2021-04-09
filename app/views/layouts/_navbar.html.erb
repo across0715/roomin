@@ -1,11 +1,11 @@
 <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
 <%= link_to "ログイン",new_user_session_path, method: :get %>
-<% if controller_name == "products" %>
+<% if controller_name == "home" %>
   <a href="#in_room">部屋にある物</a>
   <a href="#in_bath">風呂場にある物</a>
   <a href="#at_counter">カウンターでもらえます</a>
   <%= link_to 'お問合せ', new_contact_path %>
 <% else%>
-  <%= link_to '備品リストを見る', products_path %>
+  <%= link_to '備品リストへ戻る', root_path %>
   <%= link_to 'お問合せ', new_contact_path %>
 <% end %>
