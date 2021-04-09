@@ -12,7 +12,6 @@ class ContactsController < ApplicationController
 
   # GET /contacts/new
   def new
-    @contact = Contact.new
   end
 
   # GET /contacts/1/edit
@@ -21,11 +20,8 @@ class ContactsController < ApplicationController
 
   # POST /contacts or /contacts.json
   def create
-    @contact = Contact.new(contact_params)
-    if @contact.save
-      ContactMailer.contact_mail(@contact).deliver
-      redirect_to contacts_path, notice: "Contact was successfully created."
-    end
+    ContactMailer.contact_mail(contact_params).deliver_now
+    redirect_to contacts_path, notice: "Contact was successfully created."
   end
 
   # PATCH/PUT /contacts/1 or /contacts/1.json
@@ -60,6 +56,6 @@ class ContactsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def contact_params
-    params.require(:contact).permit(:name, :room_number, :content)
+    params.require(:contact).permit(:content, :image).merge(room_number: current_user.room_number, name: current_user.name)
   end
 end
