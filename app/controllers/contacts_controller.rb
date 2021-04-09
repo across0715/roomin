@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
   # POST /contacts or /contacts.json
   def create
     ContactMailer.contact_mail(contact_params).deliver_now
-    redirect_to root_path, notice: "Contact was successfully created."
+    redirect_to products_path, notice: "Contact was successfully created."
   end
 
   private
