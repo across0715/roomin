@@ -19,6 +19,12 @@
     <div class="quantity">#個</div>
   </div>
 </section> ------>
+<% @products.each do |product| %>
+  <%= product.category %>
+  <% if product.image? %>
+    <p><%= image_tag product.image.url %></p>
+  <% end %>
+<% end %>
 <%= image_tag 'room/pillow.jpg' %>
 <%= form_with(model: @product,local: true) do |form| %>
   <div class="field">

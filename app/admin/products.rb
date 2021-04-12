@@ -1,4 +1,5 @@
 ActiveAdmin.register Product do
+  permit_params :name, :category, :image, :available
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -14,5 +15,15 @@ ActiveAdmin.register Product do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  permit_params :name, :category, :image, :available
+  show do |item_image|
+    attributes_table do
+      row :name
+      row :category
+      row :available
+      # show画面で画像を表示するためのタグを追加
+      row :image do
+        image_tag(product.image.url)
+      end
+    end
+  end
 end

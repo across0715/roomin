@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @user = User.new
+    @products = Product.order(created_at: :desc)
   end
 
   def new
