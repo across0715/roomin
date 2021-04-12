@@ -3,10 +3,6 @@ class ProductsController < ApplicationController
     @product = Post.order(:id)
   end
 
-  def new
-    @product = Product.new
-  end
-
   private
 
   def product_params
