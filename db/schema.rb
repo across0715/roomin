@@ -52,8 +52,8 @@ ActiveRecord::Schema.define(version: 2021_04_12_025848) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "product_count", null: false
     t.integer "status", null: false
-    t.integer "instruct_employee_id", null: false
-    t.integer "instructed_employee_id", null: false
+    t.integer "instruct_employee_id"
+    t.integer "instructed_employee_id"
   end
 
   create_table "products", force: :cascade do |t|
