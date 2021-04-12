@@ -1,6 +1,5 @@
 class ProductsController < ApplicationController
   def index
-    @product = Post.order(:id)
   end
 
   private

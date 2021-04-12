@@ -2,7 +2,9 @@ class HomeController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @products = Product.order(created_at: :desc)
+    @room_products = Product.where(category: 1)
+    @bath_products = Product.where(category: 2)
+    @counter_products = Product.where(category: 3)
   end
 
   def new
