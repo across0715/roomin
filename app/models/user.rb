@@ -1,8 +1,13 @@
 class User < ApplicationRecord
+  validates :used, inclusion: { in: [true, false] }
+  validates :available, inclusion: { in: [true, false] }
+  validates :activated_at, presence: true
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :rememberable
   before_create :insert_activated_at
+  has_many :orders, dependent: :destroy
 
   #パスワード生成されてから有効期限は一ヶ月
   def insert_activated_at

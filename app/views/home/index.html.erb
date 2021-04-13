@@ -22,19 +22,12 @@
     <div class="quantity">#個</div>
   </div>
 </section> ------>
-<%= form_with url: local: true) do |form| %>
+<%= form_with url: orders_path, local: true do |form| %>
   <section id="in_room">
     <h2>部屋にある物</h2>
     <div class="picture_set">
       <% @room_products.each do |product| %>
-        <h3><%= product.name %></h3>
-        <% if product.image? %>
-          <p><%= image_tag product.image.url %></p>
-        <% end %>
-        <div class="field">
-          <%= form.label :quantity %>
-          <%= form.number_field :quantity, min: 0 ,max: 5, value: 0 ,required: true%>
-        </div>
+        <%= render 'order_form', product: product, form: form %>
       <% end %><!-----   each --->
     </div>
   </section>
@@ -42,20 +35,14 @@
     <h2>風呂場にある物</h2>
     <div class="picture_set">
       <% @bath_products.each do |product| %>
-        <% if product.image? %>
-          <p><%= image_tag product.image.url %></p>
-        <% end %>
-        <div class="field">
-          <%= form.label :quantity %>
-          <%= form.number_field :quantity, min: 0 ,max: 5, value: 0, required: true%>
-        </div>
-        <div class="actions">
-          <%= form.submit %>
-        </div>
+        <%= render 'order_form', product: product, form: form %>
       <% end %>
     </div>
-  <% end %><!--- form with -->
-</section>
+  </section>
+  <div>
+    <%= form.button "注文" %>
+  </div>
+<% end %><!--- form with -->
 <section id="at_counter">
   <h2>カウンターでもらえます</h2>
   <div class="picture_set">
