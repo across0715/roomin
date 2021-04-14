@@ -4,12 +4,12 @@
   <% product.available %>
   <% if product.available == true %>
     <%= "利用可能" %>
+    <div class="field">
+      <%= form.hidden_field "order[][product_id]", value: product.id %>
+      <%= form.label :quantity %>
+      <%= form.number_field :quantity, name: "order[][quantity]" ,min: 0 ,max: 5, value: 0 ,required: true %>
+    </div>
   <% else %>
     <%=  "在庫切れ" %>
   <% end %>
 <% end %>
-<div class="field">
-  <%= form.hidden_field "order[][product_id]", value: product.id %>
-  <%= form.label :quantity %>
-  <%= form.number_field :quantity, name: "order[][quantity]" ,min: 0 ,max: 5, value: 0 ,required: true %>
-</div>

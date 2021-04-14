@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
     Order.transaction do
       order_params[:order].each do |param|
         # 注文個数が1個以上ならば注文データを作成する
-        current_user.orders.create!(param) if param[:quantity].to_i > 0
+        current_user.orders.create!(param) if param[:quantity].to_i > 0 
       end
     end
     redirect_to root_path
@@ -25,6 +25,6 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.permit(order: [:product_id, :quantity])
+    params.permit(order: [:product_id, :quantity)
   end
 end
