@@ -6,7 +6,7 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :rememberable
-  before_create :insert_activated_at
+  before_validation :insert_activated_at, on: :create
   has_many :orders, dependent: :destroy
 
   #パスワード生成されてから有効期限は一ヶ月

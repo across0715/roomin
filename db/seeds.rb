@@ -1,6 +1,5 @@
-User.create!(
-  name: "user",
-  room_number: "1111",
-  password: "password",
-)
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+User.create!(password: "password") unless User.exists?
+
+AdminUser.find_or_create_by!(email: "admin@example.com") do |admin_user|
+  admin_user.password = "password"
+end
