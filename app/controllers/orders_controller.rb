@@ -7,6 +7,7 @@ class OrdersController < ApplicationController
   end
 
   def create
+    session["warden.user.user.key"].first.first
     Order.transaction do
       order_params[:order].each do |param|
         current_user.orders.create!(param)

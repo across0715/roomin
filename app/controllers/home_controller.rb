@@ -1,6 +1,4 @@
 class HomeController < ApplicationController
-  before_action :authenticate_user!
-
   def index
     @room_products = Product.where(category: "in_room")
     @bath_products = Product.where(category: "in_bath")

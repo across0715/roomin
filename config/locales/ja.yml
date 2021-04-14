@@ -1,4 +1,12 @@
 ja:
+  activerecord:
+    models:
+      admin:
+
+    attributes:
+      staffs: 従業員
+
+  # ***** 以下を追加 *****
   attributes:
     id: ID
     namespace: 名前空間
@@ -8,12 +16,12 @@ ja:
     author_id: 著者ID
     created_at: 作成日時
     updated_at: 更新日時
-
-  activerecord:
-    models:
-      user: ユーザー
-    attributes:
-      user:
-        name: 名前
-        age: 年齢
-        address: 住所
+    display: 表示
+    name: 名前
+    category: 種類
+    available: 貸出し可
+    image: イメージ
+    orders: 注文
+    room_number: 部屋番号
+    used: 利用中
+    body: 本文

@@ -104,6 +104,8 @@ GEM
       warden (~> 1.2.3)
     devise-i18n (1.9.3)
       devise (>= 4.7.1)
+    enum_help (0.0.17)
+      activesupport (>= 3.0.0)
     erubi (1.10.0)
     ffi (1.15.0)
     formtastic (4.0.0)
@@ -299,6 +301,7 @@ DEPENDENCIES
   carrierwave
   devise
   devise-i18n
+  enum_help
   jbuilder (~> 2.7)
   letter_opener_web
   listen (~> 3.2)
