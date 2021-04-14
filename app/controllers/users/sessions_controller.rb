@@ -21,6 +21,8 @@ class Users::SessionsController < Devise::SessionsController
         used: true,
         activated_at: Time.current + 1.week,
       )
+      cookies.permanent.signed[:room_number] = params[:user][:room_number]
+      cookies.permanent.signed[:name] = params[:user][:name]
     end
 
     yield resource if block_given?
