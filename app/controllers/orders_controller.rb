@@ -3,14 +3,14 @@ class OrdersController < ApplicationController
   end
 
   def new
-    orders = order_params
+    # orders = order_params
   end
 
   def create
-    binding.pry
     Order.transaction do
       order_params[:order].each do |param|
-        current_user.orders.create!(param)
+        # 注文個数が1個以上ならば注文データを作成する
+        current_user.orders.create!(param) if param[:quantity].to_i > 0
       end
     end
     redirect_to root_path

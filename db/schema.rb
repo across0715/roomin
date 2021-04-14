@@ -42,9 +42,9 @@ ActiveRecord::Schema.define(version: 2021_04_12_081950) do
     t.integer "user_id", null: false
     t.integer "product_id", null: false
     t.integer "quantity", null: false
-    t.integer "status", null: false
-    t.integer "instruct_staff_id", null: false
-    t.integer "instructed_staff_id", null: false
+    t.integer "status", default: 1, null: false
+    t.integer "instruct_staff_id"
+    t.integer "instructed_staff_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["instruct_staff_id"], name: "index_orders_on_instruct_staff_id"

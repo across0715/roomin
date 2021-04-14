@@ -4,9 +4,9 @@ class CreateOrders < ActiveRecord::Migration[6.0]
       t.references :user, null: false, foreign_key: true
       t.references :product, null: false, foreign_key: true
       t.integer :quantity, null: false
-      t.integer :status, null: false
-      t.references :instruct_staff, null: false
-      t.references :instructed_staff, null: false
+      t.integer :status, null: false, default: 1
+      t.references :instruct_staff
+      t.references :instructed_staff
 
       t.timestamps
     end

@@ -22,6 +22,7 @@
     <div class="quantity">#個</div>
   </div>
 </section> ------>
+<%= flash[:notice] %>
 <%= form_with url: orders_path, local: true do |form| %>
   <section id="in_room">
     <h2>部屋にある物</h2>
