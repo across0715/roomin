@@ -12,4 +12,5 @@ class Order < ApplicationRecord
     complete: 2,
     impossible: 3,
   }
+  enum available: {}
 end

@@ -1,7 +1,12 @@
 <h3><%= product.name %></h3>
 <% if product.image? %>
   <p><%= image_tag product.image.url %></p>
-  <%= product.available %>
+  <% product.available %>
+  <% if product.available == true %>
+    <%= "利用可能" %>
+  <% else %>
+    <%=  "在庫切れ" %>
+  <% end %>
 <% end %>
 <div class="field">
   <%= form.hidden_field "order[][product_id]", value: product.id %>
