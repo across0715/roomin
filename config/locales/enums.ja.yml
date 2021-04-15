@@ -1,8 +1,7 @@
 ja:
   enums:
-    orders:
-      filter:
-        status:
-          accept: '未対応'
-          complete: '対応済'
-          impossible: '対応不可'
+    order:
+      status:
+        accept: '未対応'
+        complete: '対応済'
+        unavailable: '対応不可'

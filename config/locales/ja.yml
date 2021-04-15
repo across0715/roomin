@@ -2,6 +2,11 @@ ja:
   activerecord:
     models:
       admin:
+      order:
+      status:
+        accept: '未対応'
+        complete: '対応済'
+        unavailable: '対応不可'
 
   attributes:
     id: ID
@@ -16,6 +21,7 @@ ja:
     room_number: 部屋番号
     used: 利用中
     body: 本文
+    accept: 未対応
 
     product: 備品
     user: 注文客名
