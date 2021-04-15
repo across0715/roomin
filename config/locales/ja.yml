@@ -1,19 +1,24 @@
 ja:
   activerecord:
     models:
-      admin:
+      order:
+      
+        
 
     attributes:
-      staffs: 従業員
+     filter:
+      status:
+        accept: 対応前
+    
 
-  # ***** 以下を追加 *****
+    attributes:
+      orders:
+        status:
+       
+
+ 
   attributes:
     id: ID
-    namespace: 名前空間
-    resource_type: リソースタイプ
-    resource_id: リソースID
-    author_type: 著者タイプ
-    author_id: 著者ID
     created_at: 作成日時
     updated_at: 更新日時
     display: 表示

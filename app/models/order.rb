@@ -10,7 +10,6 @@ class Order < ApplicationRecord
   enum status: {
     accept: 1,
     complete: 2,
-    impossible: 3,
+    unavailable: 3,
   }
-  enum available: {}
 end
