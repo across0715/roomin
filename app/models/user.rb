@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   validates :used, inclusion: { in: [true, false] }
   validates :available, inclusion: { in: [true, false] }
-  validates :activated_at, presence: true
+  validates :activated_at, presence: true, uniqueness: true
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable

@@ -1,6 +1,6 @@
 class Staff < ApplicationRecord
   validates :display, inclusion: { in: [true, false] }
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
 
   has_many :instruct_orders, class_name: "Order",
                              foreign_key: "instruct_staff_id",

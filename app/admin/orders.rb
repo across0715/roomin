@@ -23,14 +23,26 @@ ActiveAdmin.register Order do
     actions
   end
 
-  # form do |f|
-  #   f.semantic_errors
-  #   f.inputs do
+  form do |f|
+    f.semantic_errors
+    f.inputs do
+      input :user
+      input :product
+      input :quantity
+      input :status, as: :select, collection: Order.statuses_i18n.invert
+      input :instruct_staff, as: :select, collection: Staff.where(display: true).pluck(:name, :id)
+      input :instructed_staff, as: :select, collection: Staff.where(display: true).pluck(:name, :id)
+    end
+    f.actions
+  end
 
-  #     input :status, as: :select, collection: Order.statuses_i18n.invert
-
+  # show do
+  #   show do
+  #     orders do
+  #       row :
+  #     end
   #   end
-  #   f.actions
+  #   active_admin_comments
   # end
 
   # See permitted parameters documentation:
