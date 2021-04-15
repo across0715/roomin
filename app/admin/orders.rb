@@ -2,7 +2,7 @@ ActiveAdmin.register Order do
   permit_params :user_id, :product_id, :quantity, :status, :instruct_staff_id, :instructed_staff_id
   config.sort_order = "status_asc"
   preserve_default_filters!
-  filter :status, :as => :select, :collection => [["accept", "1"], ["comlete", "2"], ["unavailable", "3"]]
+  filter :status, :as => :select, :collection => [["accept", "1"], ["complete", "2"], ["unavailable", "3"]]
   # ActiveAdmin.register_page "Order_Complete" do
   #   belongs_to :order
   # end

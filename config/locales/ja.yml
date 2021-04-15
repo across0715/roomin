@@ -1,22 +1,8 @@
 ja:
   activerecord:
     models:
-      order:
-      
-        
+      admin:
 
-    attributes:
-     filter:
-      status:
-        accept: 対応前
-    
-
-    attributes:
-      orders:
-        status:
-       
-
- 
   attributes:
     id: ID
     created_at: 作成日時
@@ -30,3 +16,7 @@ ja:
     room_number: 部屋番号
     used: 利用中
     body: 本文
+
+    product: 備品
+    user: 注文客名
+    quantity: 数量
