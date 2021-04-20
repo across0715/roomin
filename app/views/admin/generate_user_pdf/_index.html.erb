@@ -4,8 +4,8 @@
     <%= form.label :staff_id, "アカウント生成従業員" %>
     <%= form.collection_select(:staff_id, @generate_staffs, :id, :name) %>
     <div>
-      <%= form.label :user_password_quantity, "数量" %>
-      <%= form.number_field :user_password_quantity, min: 10, step: 10 , value: 50 %>
+      <%= form.label :user_quantity, "数量" %>
+      <%= form.number_field :user_quantity, min: 10, step: 10 , value: 50 %>
     </div>
     <div>
       <%= form.submit "発行" %>

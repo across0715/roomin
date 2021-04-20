@@ -11,9 +11,11 @@
     <%= f.label :name %><br />
     <%= f.text_field :name, value: cookies.signed[:name], required: true %>
   </div>
+  <% username = params[:password].present? ? params[:password].slice(0, 6) : cookies.signed[:username] %>
+  <%= f.hidden_field :username, value: username %>
   <div class="field">
     <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password", value: params[:password] %>
+    <%= f.password_field :password, autocomplete: "current-password", value: params[:password], onchange: "autocompleteEmail()" %>
   </div>
   <% if devise_mapping.rememberable? %>
     <div class="field">
@@ -26,3 +28,10 @@
   </div>
 <% end %>
 <%= render "users/shared/links" %>
+<script>
+  const username = document.getElementById('user_username')
+  const password = document.getElementById('user_password')
+  const autocompleteEmail = () => {
+    username.value = password.value.slice(0, 6)
+  }
+</script>

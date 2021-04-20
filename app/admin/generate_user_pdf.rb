@@ -17,7 +17,7 @@ ActiveAdmin.register_page "generate_user_pdf" do
       # パスワード（ランダムな文字列）のリスト（配列）を作成。
       # 個数は入力画面で決定した個数とする
       # User.generate_password_list(個数)
-      quantity = params[:user_password_quantity].to_i
+      quantity = params[:user_quantity].to_i
       password_list = User.generate_password_list(quantity)
       # パスワードリストを利用して、必要な個数分ユーザーの新規アカウントを作成
 
@@ -42,14 +42,14 @@ ActiveAdmin.register_page "generate_user_pdf" do
 
       # PDF を出力
 
-      # @generate_user_pdfs = generated_password * @account.user_password_quantity
+      # @generate_user_pdfs = generated_password * @account.user_quantity
     end
   end
 
   #   private
 
   #   # def generate_user_pdf
-  #   #   params.require(:account).permit(:staff_id, :user_password_quantity)
+  #   #   params.require(:account).permit(:staff_id, :user_quantity)
   #   # end
 
   #   def product_params

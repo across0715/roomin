@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   validates :used, inclusion: { in: [true, false] }
-  validates :password, length: { is: 10 }
+  validates :username, length: { is: 6 }
   validates :available, inclusion: { in: [true, false] }
   validates :activated_at, presence: true, uniqueness: true
 

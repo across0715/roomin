@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
-  # before_action :configure_sign_in_params, only: [:create]
+  before_action :configure_permitted_parameters, only: [:new, :create]
 
   # GET /resource/sign_in
   # def new
   #   super
   # end
 
-  # POST /resource/sign_in
   def create
     self.resource = warden.authenticate!(auth_options)
     set_flash_message!(:notice, :signed_in)
@@ -21,6 +20,7 @@ class Users::SessionsController < Devise::SessionsController
         used: true,
         activated_at: Time.current + 1.week,
       )
+      cookies.permanent.signed[:username] = params[:user][:username]
       cookies.permanent.signed[:room_number] = params[:user][:room_number]
       cookies.permanent.signed[:name] = params[:user][:name]
     end
@@ -34,11 +34,18 @@ class Users::SessionsController < Devise::SessionsController
   #   super
   # end
 
-  # protected
+  protected
 
-  # If you have extra params to permit, append them to the sanitizer.
-  # def configure_sign_in_params
-  # devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
+  def user_name_generate
+    base_username = User.maximum(:id)
+    @usernames = User.create!(base_username)
+    @usernames.each do |username|
+      @username = "#{base_url}?username= #{base_username}"
+      # binding.pry
+    end
+  end
 
-  # end
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_in, keys: [:username, :room_number, :name])
+  end
 end

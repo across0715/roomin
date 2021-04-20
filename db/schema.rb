@@ -11,8 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2021_04_19_002721) do
+
   create_table "accounts", force: :cascade do |t|
-    t.integer "user_password_quantity"
+    t.integer "user_quantity"
     t.integer "staff_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -79,14 +80,16 @@ ActiveRecord::Schema.define(version: 2021_04_19_002721) do
 
   create_table "users", force: :cascade do |t|
     t.string "encrypted_password", default: "", null: false
-    t.datetime "remember_created_at"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.integer "room_number"
     t.string "name"
+    t.string "username", null: false
     t.boolean "used", default: false, null: false
     t.boolean "available", default: true, null: false
     t.datetime "activated_at", null: false
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
   add_foreign_key "accounts", "staffs"
