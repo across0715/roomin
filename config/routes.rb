@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root to: "home#index"
-
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
-  resources :contacts
-  resources :products
-  resources :orders
+  devise_for :admin_users, ActiveAdmin::Devise.config
   devise_for :users, controllers: {
                        sessions: "users/sessions",
                      }
+  root to: "home#index"
+
+  resources :contacts
+  resources :products
+  resources :orders
+  post "/admin/generate_user_pdf", to: "admin/generate_user_pdf#create"
 end

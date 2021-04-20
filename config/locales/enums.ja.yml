@@ -3,5 +3,5 @@ ja:
     order:
       status:
         accept: '未対応'
-        complete: '対応済'
+        complete: '済'
         unavailable: '対応不可'

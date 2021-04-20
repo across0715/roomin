@@ -38,6 +38,11 @@ gem 'activeadmin'
 gem 'carrierwave'
 gem 'mini_magick'
 
+gem  'rqrcode'
+gem  'rqrcode_png'
+gem  'chunky_png'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
