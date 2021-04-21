@@ -9,6 +9,7 @@ ActiveAdmin.register_page "generate_user_pdf" do
   controller do
     def index
       @generate_staffs = Staff.where(display: true)
+      @qrs = RQRCode::QRCode.new(qrcode_tag)
     end
 
     def create
@@ -26,6 +27,7 @@ ActiveAdmin.register_page "generate_user_pdf" do
       base_url = "http://localhost:3000/users/sign_in"
       user_params_list.each do |user_param|
         url = "#{base_url}?password=#{user_param[:password]}"
+        qrcode_tag(url)
       end
 
       # QRコードを作成
