@@ -36,15 +36,6 @@ class Users::SessionsController < Devise::SessionsController
 
   protected
 
-  def user_name_generate
-    base_username = User.maximum(:id)
-    @usernames = User.create!(base_username)
-    @usernames.each do |username|
-      @username = "#{base_url}?username= #{base_username}"
-      # binding.pry
-    end
-  end
-
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_in, keys: [:username, :room_number, :name])
   end
