@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   resources :contacts
   resources :products
   resources :orders
-  post "/admin/generate_user_pdf", to: "admin/generate_user_pdf#create"
+
+  post "/admin/generate_user_pdf", to: "admin/generate_user_pdf#create", format: :pdf
 end

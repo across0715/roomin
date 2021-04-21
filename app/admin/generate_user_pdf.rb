@@ -2,6 +2,8 @@ ActiveAdmin.register_page "generate_user_pdf" do
   require "rqrcode"
   require "rqrcode_png"
   require "chunky_png"
+  require "wicked_pdf"
+
   content do
     render partial: "index"
   end
@@ -9,7 +11,6 @@ ActiveAdmin.register_page "generate_user_pdf" do
   controller do
     def index
       @generate_staffs = Staff.where(display: true)
-      @qrs = RQRCode::QRCode.new(qrcode_tag)
     end
 
     def create
@@ -25,36 +26,41 @@ ActiveAdmin.register_page "generate_user_pdf" do
       users = User.create!(user_params_list)
 
       base_url = "http://localhost:3000/users/sign_in"
-      user_params_list.each do |user_param|
-        url = "#{base_url}?password=#{user_param[:password]}"
-        qrcode_tag(url)
-      end
 
-      # QRコードを作成
+      # あとで作成した全てのユーザーのpdfにする
+      # user_params_list.each do |user_param|
+      # end
 
-      # PDF を作成
+      @url = "#{base_url}?password=#{user_params_list[0][:password]}"
+      # qr = qrcode_tag(url)
+      # pdf = WickedPdf.new.pdf_from_url(qr)
 
-      # Account を作成（誰が何個作成したか）
+      render pdf: "users_#{Time.current.to_i}",
+             encording: "UTF-8",
+             layout: "application"
+      #  show_as_html: params[:show_as_html].present?
+    end
 
-      # PDF を出力
+    # QRコードを作成
 
-      # @generate_user_pdfs = generated_password * @account.user_quantity
+    # PDF を作成 # PDF を出力
 
-      def qrcode_tag(url, _options = {})
-        qr = ::RQRCode::QRCode.new(url)
-        ChunkyPNG::Image.from_datastream(qr.as_png.resize(250, 250).to_datastream).to_data_url
-      end
+    # Account を作成（誰が何個作成したか）
+
+    def qrcode_tag(url, _options = {})
+      qr = ::RQRCode::QRCode.new(url)
+      ChunkyPNG::Image.from_datastream(qr.as_png.resize(250, 250).to_datastream).to_data_url
     end
   end
-
-  #   private
-
-  #   # def generate_user_pdf
-  #   #   params.require(:account).permit(:staff_id, :user_quantity)
-  #   # end
-
-  #   def product_params
-  #     params.require(:product).permit(:category, :name, :image, :avalable)
-  #   end
-  # end
 end
+
+#   private
+
+#   # def generate_user_pdf
+#   #   params.require(:account).permit(:staff_id, :user_quantity)
+#   # end
+
+#   def product_params
+#     params.require(:product).permit(:category, :name, :image, :avalable)
+#   end
+# end
