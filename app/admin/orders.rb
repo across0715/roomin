@@ -1,4 +1,5 @@
 ActiveAdmin.register Order do
+  menu priority: 1
   permit_params :user_id, :product_id, :quantity, :status, :instruct_staff_id, :instructed_staff_id
   config.sort_order = "status_asc"
   preserve_default_filters!

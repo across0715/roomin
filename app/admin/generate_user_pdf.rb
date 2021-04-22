@@ -11,6 +11,7 @@ ActiveAdmin.register_page "generate_user_pdf" do
   controller do
     def index
       @generate_staffs = Staff.where(display: true)
+      @account = Account.new
     end
 
     def create
@@ -19,7 +20,7 @@ ActiveAdmin.register_page "generate_user_pdf" do
       # パスワード（ランダムな文字列）のリスト（配列）を作成。
       # 個数は入力画面で決定した個数とする
       # User.generate_password_list(個数)
-      quantity = params[:user_quantity].to_i
+      quantity = account_params[:user_quantity].to_i
       user_params_list = User.generate_list(quantity)
       # パスワードリストを利用して、必要な個数分ユーザーの新規アカウントを作成
 
@@ -35,6 +36,9 @@ ActiveAdmin.register_page "generate_user_pdf" do
       # qr = qrcode_tag(url)
       # pdf = WickedPdf.new.pdf_from_url(qr)
 
+      @account = Account.create!(account_params)
+      @new_qr = qrcode_tag(@url)
+
       render pdf: "users_#{Time.current.to_i}",
              encording: "UTF-8",
              layout: "application"
@@ -46,6 +50,12 @@ ActiveAdmin.register_page "generate_user_pdf" do
     # PDF を作成 # PDF を出力
 
     # Account を作成（誰が何個作成したか）
+
+    private
+
+    def account_params
+      params.require(:account).permit(:staff_id, :user_quantity)
+    end
 
     def qrcode_tag(url, _options = {})
       qr = ::RQRCode::QRCode.new(url)
