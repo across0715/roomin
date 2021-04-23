@@ -1,5 +1,5 @@
 ActiveAdmin.register Account do
-  actions :all, except: [:new, :destroy, :edit]
+  actions :all, except: [:new, :edit] #:destroy
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

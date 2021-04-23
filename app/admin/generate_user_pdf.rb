@@ -24,20 +24,34 @@ ActiveAdmin.register_page "generate_user_pdf" do
       user_params_list = User.generate_list(quantity)
       # パスワードリストを利用して、必要な個数分ユーザーの新規アカウントを作成
 
-      users = User.create!(user_params_list)
+      User.create!(user_params_list)
 
-      base_url = "http://localhost:3000/users/sign_in"
+      @base_url = "http://localhost:3000/users/sign_in"
+      @user_list = user_params_list.map do |params|
+        password = params[:password]
+        url = "#{@base_url}?password=#{password}"
+        qr = qrcode_tag(url)
+        { password: password, qr: qr }
+      end
+      binding.pry
+
+      # hoge.map { |h| h[:a] }
+
+      # new_user_params_list.each do |values|
+      #   puts values[:password][:url][:qr]
+      # end
+
+      # @new_qr = qrcode_tag(@url)
 
       # あとで作成した全てのユーザーのpdfにする
       # user_params_list.each do |user_param|
       # end
 
-      @url = "#{base_url}?password=#{user_params_list[0][:password]}"
+      # @url = "#{base_url}?password=#{user_params_list[0][:password]}"
       # qr = qrcode_tag(url)
       # pdf = WickedPdf.new.pdf_from_url(qr)
 
       @account = Account.create!(account_params)
-      @new_qr = qrcode_tag(@url)
 
       render pdf: "users_#{Time.current.to_i}",
              encording: "UTF-8",
