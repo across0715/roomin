@@ -6,7 +6,7 @@
     <%= form.collection_select(:staff_id, @generate_staffs, :id, :name) %>
     <div>
       <%= form.label :user_quantity, "数量" %>
-      <%= form.number_field :user_quantity, min: 10, step: 10 , value: 10 %>
+      <%= form.number_field :user_quantity, min: 10, step: 10, value: 10 %>
     </div>
     <div>
       <%= form.submit "発行" %>

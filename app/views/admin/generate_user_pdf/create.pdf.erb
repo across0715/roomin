@@ -1,5 +1,11 @@
-<p><%= @url %></p>
-<p><%= image_tag @new_qr %></p>
+<% @user_list.each do |user| %>
+  <p>QRコードで自動パスワード入力できます。</P>
+  <p><%= image_tag user[:qr] %></p>
+  <p>QRコードが使えない方はURLに接続してパスワードを入力してください。</p>
+  <p>【URL】<%= user[:url] %></p>
+  <p>【PASSWORD】<%= user[:password] %></p>
+  <p>【有効期限】<%= (Time.current + 1.month - 1.day).strftime('%Y/%m/%d') %></p>
+<% end %>
 <style>
-  p { font-size: 20px; }
+  p { font-size: 25px; }
 </style>

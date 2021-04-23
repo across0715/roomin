@@ -31,39 +31,22 @@ ActiveAdmin.register_page "generate_user_pdf" do
         password = params[:password]
         url = "#{@base_url}?password=#{password}"
         qr = qrcode_tag(url)
-        { password: password, qr: qr }
+        { qr: qr, url: @base_url, password: password }
       end
-      binding.pry
-
-      # hoge.map { |h| h[:a] }
-
-      # new_user_params_list.each do |values|
-      #   puts values[:password][:url][:qr]
-      # end
-
-      # @new_qr = qrcode_tag(@url)
-
-      # あとで作成した全てのユーザーのpdfにする
-      # user_params_list.each do |user_param|
-      # end
-
-      # @url = "#{base_url}?password=#{user_params_list[0][:password]}"
-      # qr = qrcode_tag(url)
-      # pdf = WickedPdf.new.pdf_from_url(qr)
 
       @account = Account.create!(account_params)
 
       render pdf: "users_#{Time.current.to_i}",
              encording: "UTF-8",
-             layout: "application"
+             layout: "application",
+             margin: {
+               top: 30,
+               bottom: 30,
+               left: 10,
+               right: 10,
+             }
       #  show_as_html: params[:show_as_html].present?
     end
-
-    # QRコードを作成
-
-    # PDF を作成 # PDF を出力
-
-    # Account を作成（誰が何個作成したか）
 
     private
 
