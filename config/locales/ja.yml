@@ -26,3 +26,6 @@ ja:
     product: 備品
     user: 注文客名
     quantity: 数量
+  home:
+    index:
+      title: 利用規約

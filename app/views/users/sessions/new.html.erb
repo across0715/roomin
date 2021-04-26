@@ -1,5 +1,16 @@
-<h1>ルームサービスアプリです</h1>
-<h2>言語を選択してください</h2>
+<h1><%= t(".title") %></h1>
+<h2><%= t(".language_select") %></h2>
+<ul>
+  <li>
+    <% if I18n.locale.to_s == "en" %>
+      <%= link_to('日本語', :locale => 'ja') %>
+    <% elsif I18n.locale.to_s == "zh-CN" %>
+      <%= link_to('日本語', :locale => 'zh-CN') %>
+    <% else %>
+      <%= link_to('English', :locale => 'en') %>
+    <% end %>
+  </li>
+</ul>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :room_number %><br />
@@ -22,7 +33,7 @@
     </div>
   <% end %>
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit t('.sign_in') %>
   </div>
 <% end %>
 <%= render "users/shared/links" %>
