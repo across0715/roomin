@@ -30,7 +30,12 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: 'Hello world'
   home:
     index:
       title: Usage Regulations
+      Things in the bedroom: Things in the bedroom
+      Things in the bathroom: Things in the bathroom
+      Things at the counter: You can get these at the reception-desk.
+      Return to Supplies List: Return to Supplies List
+      contact_form: Contact
+      supplies list: supplies list

@@ -1,6 +1,8 @@
 ja:
   activerecord:
     models:
+      prodct:
+        pillow: 枕
       admin:
       order:
       status:
@@ -29,3 +31,9 @@ ja:
   home:
     index:
       title: 利用規約
+      Things in the bedroom: お部屋にある物
+      Things in the bathroom: 風呂場にある物
+      Things at the counter: カウンターでもらえます
+      Return to Supplies List: 備品リストに戻る
+      contact_form: お問い合わせ
+      supplies list: 備品リスト

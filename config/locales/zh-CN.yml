@@ -6,6 +6,16 @@ zh-CN:
         restrict_dependent_destroy:
           has_one: 由于 %{record} 需要此记录，所以无法移除记录
           has_many: 由于 %{record} 需要此记录，所以无法移除记录
+
+  home:
+    index:
+      title: 使用规则
+      Things in the bedroom: 卧室里的东西
+      Things in the bathroom: 浴室里的东西
+      Things at the counter: 柜台上的东西
+      Return to Supplies List: 返回物料供应清单
+      contact_form: 联络表格
+      supplies list: 供应品目录
   date:
     abbr_day_names:
       - 周日

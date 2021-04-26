@@ -32,7 +32,7 @@ zh-CN:
     models:
       user: 用户
 
-  users:
+  devise:
     confirmations:
       confirmed: 成功验证您的邮箱。
       new:
