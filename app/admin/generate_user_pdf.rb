@@ -40,8 +40,8 @@ ActiveAdmin.register_page "generate_user_pdf" do
              encording: "UTF-8",
              layout: "application",
              margin: {
-               top: 30,
-               bottom: 30,
+               top: 10,
+               bottom: 10,
                left: 10,
                right: 10,
              }
