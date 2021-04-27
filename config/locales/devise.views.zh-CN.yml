@@ -122,8 +122,8 @@ zh-CN:
         title: 这是一个客房服务应用程序。
         language_select: 请选择语言。
 
-        signed_in: 登录成功。
-        signed_out: 登出成功。
+      signed_in: 登录成功。
+      signed_out: 登出成功。
 
     shared:
       links:

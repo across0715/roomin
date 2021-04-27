@@ -19,6 +19,10 @@ th:
         password_confirmation: ยืนยันรหัสผ่าน
         remember_created_at: การจำผู้ใช้ครั้งล่าสุด
         remember_me: จำชื่อผู้ใช้
+
+        room_number: หมายเลขห้อง
+        name: ชื่อ
+
         reset_password_sent_at: คำสั่งการเปลี่ยนรหัสผ่านถูกส่งไปเมื่อ
         reset_password_token: รหัสลับสำหรับการเปลี่ยนรหัสผ่าน
         sign_in_count: จำนวนครั้งที่เข้าสู่ระบบ
@@ -111,8 +115,12 @@ th:
       updated_but_not_signed_in:
     sessions:
       already_signed_out: ออกจากระบบเรียบร้อยแล้ว
+
       new:
         sign_in: เข้าสู่ระบบ
+        title: นี่คือแอพพพนักงาน
+        language_select: ช่วยเลือกภาษาหน่อยครับ
+
       signed_in: เข้าสู่ระบบเรียบร้อยแล้ว
       signed_out: ออกจากระบบเรียบร้อยแล้ว
     shared:
