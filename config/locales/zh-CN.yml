@@ -10,16 +10,16 @@ zh-CN:
   home:
     index:
       title: 使用规则
-      supplies_list: 非商品目录
+      amenity list: 善意清单
       Things_in_the_bedroom: 卧室里的东西
       Things_in_the_bathroom: 浴室里的东西
       Things_at_the_counter: 柜台上的东西
 
   layouts:
     navbar:
-      Return_to_the_Supplies_List: 返回物料供应清单
+      Return_to_the_amenity list: 返回物料供应清单
       contact_form: 联络表格
-      supplies_list: 供应品目录
+      amenity list: 善意清单
       Things_in_the_bedroom: 卧室里的东西
       Things_in_the_bathroom: 浴室里的东西
       Things_at_the_counter: 柜台上的东西

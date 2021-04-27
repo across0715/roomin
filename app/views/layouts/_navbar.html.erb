@@ -5,10 +5,10 @@
   <a href="#at_counter"><%= t(".Things_at_the_counter") %></a>
   <%= link_to t(".contact_form"),new_contact_path %>
 <% elsif controller_name == "devise"%>
-  <%= link_to t(".Return_to_the_Supplies_List"), root_path %>
+  <%= link_to t(".Return_to_the_amenity list"), root_path %>
   <%= link_to t(".contact_form"),new_contact_path %>
 <% elsif controller_name == "contacts" %>
   <%= link_to t(".Logout"), destroy_user_session_path, method: :delete %>
-  <%= link_to t(".Return_to_the_Supplies_List"), root_path %>
+  <%= link_to t(".Return_to_the_amenity list"), root_path %>
 <% else %>
 <% end %>

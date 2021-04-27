@@ -36,9 +36,9 @@ en:
 
   layouts:
     navbar:
-      Return_to_the_Supplies_List: Return to the Supplies List
+      Return_to_the_amenity list: Return to the amenity list
       contact_form: contact form
-      supplies_list: supplies list
+      amenity list: amenity list
       Things_in_the_bedroom: Things in the bedroom
       Things_in_the_bathroom: Things in the bathroom
       Things_at_the_counter: Things at the counter

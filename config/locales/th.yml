@@ -7,16 +7,16 @@ th:
   home:
     index:
       title: ข้อบังคับใช้
-      supplies_list: รายการอุปกรณ์
+      amenity list: รายการการแสดงความยินดี
       Things_in_the_bedroom: ของที่อยู่ในห้องนอน
       Things_in_the_bathroom: ของที่อยู่ในห้องน้ำ
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์
 
   layouts:
     navbar:
-      Return_to_the_Supplies_List: หมุนรายการโปรด
+      Return_to_the_amenity list: หมุนรายการโปรด
       contact_form: สอบถาม
-      supplies_list: รายชื่อสินค้า
+      amenity list: รายการการแสดงความยินดี
       Things_in_the_bedroom: ของที่อยู่ในห้องนอน
       Things_in_the_bathroom: ของที่อยู่ในห้องน้ำ
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์

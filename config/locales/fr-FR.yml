@@ -2,16 +2,16 @@ fr-FR:
   home:
     index:
       title: Règle d'utilisation
-      supplies_list: Liste non exhaustive
+      amenity list: Liste des agréments
       Things_in_the_bedroom: Tout ce qui est dans la chambre.
       Things_in_the_bathroom: Objets dans la salle de bain
       Things_at_the_counter: Disponible au comptoir
 
   layouts:
     navbar:
-      Return_to_the_Supplies_List: Retour à la non-liste
+      Return_to_the_amenity list: Retour à la non-liste
       contact_form: Questionner
-      supplies_list: Liste non exhaustive
+      amenity list: Liste des agréments
       Things_in_the_bedroom: Tout ce qui est dans la chambre.
       Things_in_the_bathroom: Objets dans la salle de bain
       Things_at_the_counter: Disponible au comptoir
