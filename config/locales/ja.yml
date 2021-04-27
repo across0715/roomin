@@ -19,8 +19,6 @@ ja:
 
   activerecord:
     models:
-      product:
-        pillow: 枕
       admin:
       order:
       status:

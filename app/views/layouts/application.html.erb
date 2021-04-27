@@ -8,6 +8,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <%= render "layouts/flash" %>
     <div class="navbar-item">
       <div class="control has-icons-left">
         <div class="select is-small is-rounded">
@@ -22,7 +23,6 @@
         </span>
       </div>
     </div>
-    <%= render "layouts/flash" %>
     <%= render "layouts/navbar" %>
     <%= yield %>
   </body>
