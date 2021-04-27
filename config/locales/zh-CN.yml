@@ -10,6 +10,7 @@ zh-CN:
   home:
     index:
       title: 使用规则
+      supplies_list: 非商品目录
       Things_in_the_bedroom: 卧室里的东西
       Things_in_the_bathroom: 浴室里的东西
       Things_at_the_counter: 柜台上的东西
@@ -22,6 +23,7 @@ zh-CN:
       Things_in_the_bedroom: 卧室里的东西
       Things_in_the_bathroom: 浴室里的东西
       Things_at_the_counter: 柜台上的东西
+      Logout: 注销
 
   date:
     abbr_day_names:
