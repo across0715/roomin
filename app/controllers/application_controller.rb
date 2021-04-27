@@ -15,4 +15,7 @@ class ApplicationController < ActionController::Base
   def default_url_options(options = {})
     options.merge(locale: locale)
   end
+
+  def get_language
+  end
 end

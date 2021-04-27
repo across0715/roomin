@@ -8,6 +8,20 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <div class="navbar-item">
+      <div class="control has-icons-left">
+        <div class="select is-small is-rounded">
+          <select id="selectedLocale">
+            <% selectable_locale_list.each do |locale| %>
+              <option value="<%= locale[:value] %>"<%= I18n.locale == locale[:value] ? ' selected' : '' %>><%= locale[:name] %></option>
+            <% end %>
+          </select>
+        </div>
+        <span class="icon is-small is-left">
+          <i class="fas fa-globe"></i>
+        </span>
+      </div>
+    </div>
     <%= render "layouts/flash" %>
     <%= render "layouts/navbar" %>
     <%= yield %>
