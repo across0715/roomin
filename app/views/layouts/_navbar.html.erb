@@ -1,14 +1,14 @@
 <% if controller_name == "home"%>
   <%= link_to t(".Logout"), destroy_user_session_path, method: :delete %>
-  <a href="#in_room"><%= t(".Things in the bedroom") %></a>
-  <a href="#in_bath"><%= t(".Things in the bathroom") %></a>
-  <a href="#at_counter"><%= t(".Things at the counter") %></a>
+  <a href="#in_room"><%= t(".Things_in_the_bedroom") %></a>
+  <a href="#in_bath"><%= t(".Things_in_the_bathroom") %></a>
+  <a href="#at_counter"><%= t(".Things_at_the_counter") %></a>
   <%= link_to t(".contact_form"),new_contact_path %>
 <% elsif controller_name == "devise"%>
-  <%= link_to t(".Return to Supplies List"), root_path %>
+  <%= link_to t(".Return_to_the_Supplies_List"), root_path %>
   <%= link_to t(".contact_form"),new_contact_path %>
 <% elsif controller_name == "contacts" %>
   <%= link_to t(".Logout"), destroy_user_session_path, method: :delete %>
-  <%= link_to t(".Return to Supplies List"), root_path %>
+  <%= link_to t(".Return_to_the_Supplies_List"), root_path %>
 <% else %>
 <% end %>

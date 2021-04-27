@@ -33,9 +33,12 @@ en:
   home:
     index:
       title: Usage Regulations
-      Things in the bedroom: Things in the bedroom
-      Things in the bathroom: Things in the bathroom
-      Things at the counter: You can get these at the reception-desk.
-      Return to Supplies List: Return to Supplies List
-      contact_form: Contact
-      supplies list: supplies list
+
+  layouts:
+    navbar:
+      Return_to_the_Supplies_List: 備品リストに戻る
+      contact_form: お問い合わせ
+      supplies_list: 備品リスト
+      Things_in_the_bedroom: お部屋にある物
+      Things_in_the_bathroom: 風呂場にある物
+      Things_at_the_counter: カウンターでもらえます

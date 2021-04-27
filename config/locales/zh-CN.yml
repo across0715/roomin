@@ -10,12 +10,19 @@ zh-CN:
   home:
     index:
       title: 使用规则
-      Things in the bedroom: 卧室里的东西
-      Things in the bathroom: 浴室里的东西
-      Things at the counter: 柜台上的东西
-      Return to Supplies List: 返回物料供应清单
+      Things_in_the_bedroom: 卧室里的东西
+      Things_in_the_bathroom: 浴室里的东西
+      Things_at_the_counter: 柜台上的东西
+
+  layouts:
+    navbar:
+      Return_to_the_Supplies_List: 返回物料供应清单
       contact_form: 联络表格
-      supplies list: 供应品目录
+      supplies_list: 供应品目录
+      Things_in_the_bedroom: 卧室里的东西
+      Things_in_the_bathroom: 浴室里的东西
+      Things_at_the_counter: 柜台上的东西
+
   date:
     abbr_day_names:
       - 周日

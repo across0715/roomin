@@ -1,9 +1,9 @@
 <h1><%= t(".title") %></h1>
-<h5>イタズラ行為禁止</h5>
-<h5>責任取らせる</h5>
-<h5>などなど</h5>
-<h5>注意すべき事項</h5>
-<h1><%= t(".supplies list") %></h1>
+<h5><%= t(".no_damaging_behavior") %>イタズラ行為禁止</h5>
+<h5><%= t(".take_responsibility_for") %>責任取らせる</h5>
+<h5><%= t(".ect") %>などなど</h5>
+<h5><%= t(".things_to_Watch_Out_for") %>注意すべき事項</h5>
+<h1><%= t(".supplies_list") %></h1>
 <br>
 <br>
 <br>
@@ -24,7 +24,7 @@
 </section> ------>
 <%= form_with url: orders_path, local: true do |form| %>
   <section id="in_room">
-    <h2><%= t(".Things in the bedroom") %></h2>
+    <h2><%= t(".Things_in_the_bedroom") %></h2>
     <div class="picture_set">
       <% @room_products.each do |product| %>
         <%= render 'order_form', product: product, form: form %>
@@ -32,7 +32,7 @@
     </div>
   </section>
   <section id="in_bath">
-    <h2><%= t(".Things in the bathroom") %></h2>
+    <h2><%= t(".Things_in_the_bathroom") %></h2>
     <div class="picture_set">
       <% @bath_products.each do |product| %>
         <%= render 'order_form', product: product, form: form %>
@@ -44,7 +44,7 @@
   </div>
 <% end %><!--- form with -->
 <section id="at_counter">
-  <h2><%= t(".Things at the counter") %></h2>
+  <h2><%= t(".Things_at_the_counter") %></h2>
   <div class="picture_set">
     <% @counter_products.each do |product| %>
       <h3><%= product.name %></h3>
