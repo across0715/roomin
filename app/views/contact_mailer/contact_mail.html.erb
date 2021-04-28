@@ -1,0 +1,6 @@
+<h3>【部屋】 <%= @room_number %></h3>
+<h3>【氏名】 <%= @name %></h3>
+<p><%= @content %></p>
+<% if attachments[@filename] %>
+  <%= image_tag attachments[@filename].url %>
+<% end %>

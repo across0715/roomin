@@ -1,0 +1,15 @@
+<% if controller_name == "home"%>
+  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+  <a href="#in_room">部屋にある物</a>
+  <a href="#in_bath">風呂場にある物</a>
+  <a href="#at_counter">カウンターでもらえます</a>
+  <%= link_to 'お問合せ', new_contact_path %>
+<% elsif controller_name == "devise"%>
+  <%= link_to '備品リストへ戻る', root_path %>
+  <%= link_to 'お問合せ', new_contact_path %>
+<% elsif controller_name == "contacts" %>
+  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+  <%= link_to '備品リストへ戻る', root_path %>
+<% else %>
+  <p>loginしてください</p>
+<% end %>

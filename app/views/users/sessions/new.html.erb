@@ -1,0 +1,35 @@
+<h1>ルームサービスアプリです</h1>
+<h2>言語を選択してください</h2>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :room_number %><br />
+    <%= f.number_field :room_number, min: 100, max: 9999, value: cookies.signed[:room_number], required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, value: cookies.signed[:name], required: true %>
+  </div>
+  <% username = params[:password].present? ? params[:password].slice(0, 6) : cookies.signed[:username] %>
+  <%= f.hidden_field :username, value: username %>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password", value: params[:password], onchange: "autocompleteEmail()" %>
+  </div>
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+<%= render "users/shared/links" %>
+<script>
+  const username = document.getElementById('user_username')
+  const password = document.getElementById('user_password')
+  const autocompleteEmail = () => {
+    username.value = password.value.slice(0, 6)
+  }
+</script>

@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  ActiveAdmin.routes(self)
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  devise_for :users, controllers: {
+                       sessions: "users/sessions",
+                     }
+  root to: "home#index"
+
+  resources :contacts
+  resources :products
+  resources :orders
+
+  post "/admin/generate_user_pdf", to: "admin/generate_user_pdf#create", format: :pdf
 end
