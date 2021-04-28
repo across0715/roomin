@@ -1,27 +1,9 @@
-<h1><%= t(".title") %></h1>
 <h5><%= t(".no_damaging_behavior") %>イタズラ行為禁止</h5>
 <h5><%= t(".take_responsibility_for") %>責任取らせる</h5>
 <h5><%= t(".ect") %>などなど</h5>
 <h5><%= t(".things_to_Watch_Out_for") %>注意すべき事項</h5>
 <h1><%= t(".amenity_list") %></h1>
 <br>
-<br>
-<br>
-<!---- <section id="in_room">
-  <h2>部屋にある物</h2>
-  <div class="picture_set">
-    <%= image_tag 'room/pillow.jpg' %>
-    <div class="quantity">#個</div>
-  </div>
-  <div class="picture_set">
-    <%= image_tag 'room/pillow.jpg' %>
-    <div class="quantity">#個</div>
-  </div>
-  <div class="picture_set">
-    <%= image_tag 'room/pillow.jpg' %>
-    <div class="quantity">#個</div>
-  </div>
-</section> ------>
 <%= form_with url: orders_path, local: true do |form| %>
   <div class= "section_wrap">
     <section id="in_room">
