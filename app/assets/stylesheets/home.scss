@@ -4,8 +4,15 @@
 // .section_wrap {
 //   float: left;
 // }
-.nav {
+
+.navbar {
+  height: 60px;
+  width: 95%;
   background-color: gold;
+  position: fixed;
+}
+.navbar a {
+  text-decoration: none;
 }
 
 .picture_set {
@@ -21,4 +28,16 @@
 #in_room,
 #in_bath,
 #at_counter {
+}
+
+.contact_form {
+  margin-top: 100px;
+  background-color: cornflowerblue;
+  width: 800px;
+  height: 500px;
+}
+
+.footer {
+  height: 60px;
+  background-color: gold;
 }
