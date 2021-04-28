@@ -1,3 +1,43 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+// .section_wrap {
+//   float: left;
+// }
+
+.navbar {
+  height: 60px;
+  width: 95%;
+  background-color: gold;
+  position: fixed;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.picture_set {
+  display: flex;
+  background-color: white;
+}
+.img_frame {
+  width: 400px;
+  height: 500px;
+  background-color: #c2ddf5;
+  text-align: center;
+}
+#in_room,
+#in_bath,
+#at_counter {
+}
+
+.contact_form {
+  margin-top: 100px;
+  background-color: cornflowerblue;
+  width: 800px;
+  height: 500px;
+}
+
+.footer {
+  height: 60px;
+  background-color: gold;
+}

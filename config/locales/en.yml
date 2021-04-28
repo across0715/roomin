@@ -30,4 +30,26 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      product:
+    attributes:
+      category:
+
+  home:
+    index:
+      title: Usage Regulations
+      amenity_list: Amenity list
+    order_form:
+      available: available
+      out_of_stock: out of stock
+    form_with:
+
+  layouts:
+    navbar:
+      Return_to_the_amenity_list: Return to the amenity_list
+      contact_form: contact form
+      amenity_list: Amenity list
+      Things_in_the_bedroom: Things in the bedroom
+      Things_in_the_bathroom: Things in the bathroom
+      Things_at_the_counter: Things at the counter

@@ -1,8 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @room_products = Product.where(category: "in_room")
-    @bath_products = Product.where(category: "in_bath")
-    @counter_products = Product.where(category: "at_counter")
+    @room_products = Product.where(category: "room")
+    @bath_products = Product.where(category: "bath")
+    @counter_products = Product.where(category: "counter")
   end
 
   def new

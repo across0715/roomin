@@ -9,8 +9,8 @@ class Product < ApplicationRecord
   has_many :orders, dependent: :destroy
 
   enum category: {
-    in_room: 1,
-    in_bath: 2,
-    at_counter: 3,
+    room: 1,
+    bath: 2,
+    counter: 3,
   }
 end

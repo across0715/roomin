@@ -1,15 +1,30 @@
-<% if controller_name == "home"%>
-  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-  <a href="#in_room">部屋にある物</a>
-  <a href="#in_bath">風呂場にある物</a>
-  <a href="#at_counter">カウンターでもらえます</a>
-  <%= link_to 'お問合せ', new_contact_path %>
-<% elsif controller_name == "devise"%>
-  <%= link_to '備品リストへ戻る', root_path %>
-  <%= link_to 'お問合せ', new_contact_path %>
-<% elsif controller_name == "contacts" %>
-  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-  <%= link_to '備品リストへ戻る', root_path %>
-<% else %>
-  <p>loginしてください</p>
-<% end %>
+<div class= "navbar">
+  <div class="navbar-item">
+    <div class="control has-icons-left">
+      <div class="select is-small is-rounded">
+        <select id="selectedLocale">
+          <% selectable_locale_list.each do |locale| %>
+            <option value="<%= locale[:value] %>"<%= I18n.locale == locale[:value] ? ' selected' : '' %>><%= locale[:name] %></option>
+          <% end %>
+        </select>
+      </div>
+      <span class="icon is-small is-left">
+        <i class="fas fa-globe"></i>
+      </span>
+    </div>
+  </div>
+  <% if controller_name == "home"%>
+    <%= link_to t(".Logout"), destroy_user_session_path, method: :delete %>
+    <a href="#in_room" ><%= t(".Things_in_the_bedroom") %></a>
+    <a href="#in_bath"><%= t(".Things_in_the_bathroom") %></a>
+    <a href="#at_counter"><%= t(".Things_at_the_counter") %></a>
+    <%= link_to t(".contact_form"),new_contact_path %>
+  <% elsif controller_name == "devise"%>
+    <%= link_to t(".Return_to_the_amenity_list"), root_path %>
+    <%= link_to t(".contact_form"),new_contact_path %>
+  <% elsif controller_name == "contacts" %>
+    <%= link_to t(".Logout"), destroy_user_session_path, method: :delete %>
+    <%= link_to t(".Return_to_the_amenity_list"), root_path %>
+  <% else %>
+  <% end %>
+</div>
