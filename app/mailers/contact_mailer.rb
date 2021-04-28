@@ -7,7 +7,8 @@ class ContactMailer < ApplicationMailer
     if contact_params[:image]
       attachments.inline[@filename] = File.read(contact_params[:image])
     end
-    mail to: "hotelのメールアドレス@across0715@gmail.com",
-         subject: "お問い合わせ(#{@room_number}:#{@name})"
+    #実際ホテルのメールアドレス
+    mail to: "across0715@gmail.com",
+         subject: "お問い合わせ(#{@room_number}:#{@name})様"
   end
 end
