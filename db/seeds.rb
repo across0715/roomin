@@ -3,5 +3,5 @@ User.find_or_create_by!(username: "passwo") do |user|
 end
 
 AdminUser.find_or_create_by!(email: "admin@example.com") do |admin_user|
-  admin_user.password = "password"
+  admin_user.password = "password12"
 end

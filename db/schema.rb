@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2021_04_19_002721) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "accounts", force: :cascade do |t|
     t.integer "user_quantity"
-    t.integer "staff_id"
+    t.bigint "staff_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["staff_id"], name: "index_accounts_on_staff_id"
@@ -24,9 +27,9 @@ ActiveRecord::Schema.define(version: 2021_04_19_002721) do
     t.string "namespace"
     t.text "body"
     t.string "resource_type"
-    t.integer "resource_id"
+    t.bigint "resource_id"
     t.string "author_type"
-    t.integer "author_id"
+    t.bigint "author_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
@@ -47,12 +50,12 @@ ActiveRecord::Schema.define(version: 2021_04_19_002721) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "product_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "product_id", null: false
     t.integer "quantity", null: false
     t.integer "status", default: 1, null: false
-    t.integer "instruct_staff_id"
-    t.integer "instructed_staff_id"
+    t.bigint "instruct_staff_id"
+    t.bigint "instructed_staff_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["instruct_staff_id"], name: "index_orders_on_instruct_staff_id"
