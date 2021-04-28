@@ -7,16 +7,27 @@ th:
   home:
     index:
       title: ข้อบังคับใช้
-      amenity list: รายการการแสดงความยินดี
+      amenity_list: รายการการแสดงความยินดี
       Things_in_the_bedroom: ของที่อยู่ในห้องนอน
       Things_in_the_bathroom: ของที่อยู่ในห้องน้ำ
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์
+      scissors: กรรไกร
+
+    order_form:
+      available: กู้ยืมได้
+      quantity: จำนวนปริมาณนั้น
+      out_of_stock: ออกจากหุณหภูมิต้านทาน
+      pillow: หมอน
+      slippers: รองเท้าแตะ
+      face towel: ผ้าเช็ดหน้า
+      tooth brush: แปรงสีฟัน
+      bath towel: ผ้าเช็ดตัวอาบน้ำ
 
   layouts:
     navbar:
-      Return_to_the_amenity list: หมุนรายการโปรด
+      Return_to_the_amenity_list: หมุนรายการโปรด
       contact_form: สอบถาม
-      amenity list: รายการการแสดงความยินดี
+      amenity_list: รายการการแสดงความยินดี
       Things_in_the_bedroom: ของที่อยู่ในห้องนอน
       Things_in_the_bathroom: ของที่อยู่ในห้องน้ำ
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์

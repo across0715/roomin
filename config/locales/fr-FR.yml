@@ -2,16 +2,26 @@ fr-FR:
   home:
     index:
       title: Règle d'utilisation
-      amenity list: Liste des agréments
+      amenity_list: Liste des agréments
       Things_in_the_bedroom: Tout ce qui est dans la chambre.
       Things_in_the_bathroom: Objets dans la salle de bain
       Things_at_the_counter: Disponible au comptoir
+      scissors: ciseaux
+    order_form:
+      available: disponible
+      quantity: quantité
+      out_of_stock: out of stock
+      pillow: tail
+      slippers: pantoufles
+      face towel: face towel
+      tooth brush: brosse à dents
+      bath towel: serviette de bain
 
   layouts:
     navbar:
-      Return_to_the_amenity list: Retour à la non-liste
+      Return_to_the_amenity_list: Retour à la non-liste
       contact_form: Questionner
-      amenity list: Liste des agréments
+      amenity_list: Liste des agréments
       Things_in_the_bedroom: Tout ce qui est dans la chambre.
       Things_in_the_bathroom: Objets dans la salle de bain
       Things_at_the_counter: Disponible au comptoir

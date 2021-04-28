@@ -10,16 +10,26 @@ zh-CN:
   home:
     index:
       title: 使用规则
-      amenity list: 善意清单
+      amenity_list: 善意清单
       Things_in_the_bedroom: 卧室里的东西
       Things_in_the_bathroom: 浴室里的东西
       Things_at_the_counter: 柜台上的东西
+      scissors: 剪子
+    order_form:
+      available: 可用的
+      quantity: 数量
+      out_of_stock: 脱销
+      pillow: 枕头
+      slippers: 拖鞋
+      face towel: 脸巾
+      tooth brush: 牙刷
+      bath towel: 浴巾
 
   layouts:
     navbar:
-      Return_to_the_amenity list: 返回物料供应清单
+      Return_to_the_amenity_list: 返回物料供应清单
       contact_form: 联络表格
-      amenity list: 善意清单
+      amenity_list: 善意清单
       Things_in_the_bedroom: 卧室里的东西
       Things_in_the_bathroom: 浴室里的东西
       Things_at_the_counter: 柜台上的东西

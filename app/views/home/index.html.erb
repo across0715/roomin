@@ -3,7 +3,7 @@
 <h5><%= t(".take_responsibility_for") %>責任取らせる</h5>
 <h5><%= t(".ect") %>などなど</h5>
 <h5><%= t(".things_to_Watch_Out_for") %>注意すべき事項</h5>
-<h1><%= t(".amenity list") %></h1>
+<h1><%= t(".amenity_list") %></h1>
 <br>
 <br>
 <br>
@@ -23,14 +23,16 @@
   </div>
 </section> ------>
 <%= form_with url: orders_path, local: true do |form| %>
-  <section id="in_room">
-    <h2><%= t(".Things_in_the_bedroom") %></h2>
-    <div class="picture_set">
-      <% @room_products.each do |product| %>
-        <%= render 'order_form', product: product, form: form %>
-      <% end %><!-----   each --->
-    </div>
-  </section>
+  <div class= "section_wrap">
+    <section id="in_room">
+      <h2><%= t(".Things_in_the_bedroom") %></h2>
+      <div class="picture_set">
+        <% @room_products.each do |product| %>
+          <%= render 'order_form', product: product, form: form %>
+        <% end %><!-----   each --->
+      </div>
+    </section>
+  </div>
   <section id="in_bath">
     <h2><%= t(".Things_in_the_bathroom") %></h2>
     <div class="picture_set">
@@ -46,11 +48,13 @@
 <section id="at_counter">
   <h2><%= t(".Things_at_the_counter") %></h2>
   <div class="picture_set">
-    <% @counter_products.each do |product| %>
-      <h3><%= product.name %></h3>
-      <% if product.image? %>
-        <p><%= image_tag product.image.url %></p>
+    <div class ="img_frame">
+      <% @counter_products.each do |product| %>
+        <h3><%= t(".#{product.name}") %></h3>
+        <% if product.image? %>
+          <p><%= image_tag product.image.url %></p>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 </section>
