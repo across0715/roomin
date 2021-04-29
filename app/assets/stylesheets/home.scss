@@ -16,17 +16,13 @@
 
 .picture_set {
   display: flex;
-  background-color: white;
+  background-color: red;
 }
 .img_frame {
   width: 400px;
   height: 500px;
-  background-color: #c2ddf5;
+  background-color: greenyellow;
   text-align: center;
-}
-#in_room,
-#in_bath,
-#at_counter {
 }
 
 .contact_form {
@@ -36,7 +32,22 @@
   height: 500px;
 }
 
+.wrapper {
+  min-height: 100vh;
+  position: relative; /*←相対位置*/
+  padding-bottom: 120px; /*←footerの高さ*/
+  box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
+  background-color: aqua;
+}
+
 .footer {
-  height: 60px;
-  background-color: gold;
+  width: 100%;
+
+  background-color: #89c7de;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+
+  position: absolute; /*←絶対位置*/
+  bottom: 0; /*下に固定*/
 }
