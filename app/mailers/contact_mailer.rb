@@ -13,6 +13,4 @@ class ContactMailer < ApplicationMailer
          reply_to: @email,
          subject: "お問い合わせ(#{@room_number}:#{@name})様"
   end
-
-  redirect_to root_path
 end
