@@ -1,16 +1,16 @@
 <div class ="img_frame">
   <%= t(".#{product.name}") %>
   <% if product.image? %>
-    <p><%= image_tag product.image.url %></p>
+    <div class= "p_img"><%= image_tag product.image.url %></div>
   <% end %>
   <% if product.available == true %>
-    <p><%= t(".available") %></p>
+    <div><%= t(".available") %></div>
     <div class="field">
       <%= form.hidden_field "order[][product_id]", value: product.id %>
       <%= form.label :quantity, t(".quantity") %>
       <%= form.number_field :quantity, name: "order[][quantity]" ,min: 0 ,max: 5, value: 0 ,required: true %>
     </div>
   <% else %>
-    <p><%= t(".out_of_stock") %></p>
+    <div><%= t(".out_of_stock") %></div>
   <% end %>
 </div>

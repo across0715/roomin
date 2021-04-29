@@ -6,16 +6,14 @@
   <h1><%= t(".amenity_list") %></h1>
   <br>
   <%= form_with url: orders_path, local: true do |form| %>
-    <div class= "section_wrap">
-      <section id="in_room">
-        <h2><%= t(".Things_in_the_bedroom") %></h2>
-        <div class="picture_set">
-          <% @room_products.each do |product| %>
-            <%= render 'order_form', product: product, form: form %>
-          <% end %><!-----   each --->
-        </div>
-      </section>
-    </div>
+    <section id="in_room">
+      <h2><%= t(".Things_in_the_bedroom") %></h2>
+      <div class="picture_set">
+        <% @room_products.each do |product| %>
+          <%= render 'order_form', product: product, form: form %>
+        <% end %><!-----   each --->
+      </div>
+    </section>
     <section id="in_bath">
       <h2><%= t(".Things_in_the_bathroom") %></h2>
       <div class="picture_set">
@@ -24,7 +22,7 @@
         <% end %>
       </div>
     </section>
-    <div>
+    <div class= "button">
       <%= form.button "注文" %>
     </div>
   <% end %><!--- form with -->
@@ -35,11 +33,11 @@
         <div class ="img_frame">
           <%= t(".#{product.name}") %>
           <% if product.image? %>
-            <p><%= image_tag product.image.url %></p>
+            <div class= "p_img"><%= image_tag product.image.url %></div>
           <% end %>
         </div>
       <% end %>
     </div>
   </section>
 </div>
-<!------------- class= "wrapper  ---------------->
+<!-- ^ ----------- wrapper  ---------------->
