@@ -8,6 +8,7 @@ ActiveAdmin.register Product do
       row :available
       # show画面で画像を表示するためのタグを追加
       row :image do
+        
         image_tag(product.image.url)
       end
     end
