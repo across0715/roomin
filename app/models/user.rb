@@ -38,7 +38,7 @@ class User < ApplicationRecord
       id = base_id.to_s(16)
       # id は６桁とする
       count = 5 - id.size
-      id << [*"g".."z"].shuffle[0..count].join
+      id << [*"g".."z"].shuffle[0..count].join if count >= 0
       # 残り４文字ランダムで追加
       salt = [*"a".."z", *0..9].shuffle[0..3].join
       list << { username: id, password: "#{id}#{salt}" }
