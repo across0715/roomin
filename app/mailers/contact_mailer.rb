@@ -5,7 +5,6 @@ class ContactMailer < ApplicationMailer
     @email = contact_params[:email]
     @content = contact_params[:content]
     @filename = "#{Time.current.to_i}_#{@room_number}_#{@name}.jpg"
-    binding.pry
     if contact_params[:image]
       attachments.inline[@filename] = File.read(contact_params[:image])
     end

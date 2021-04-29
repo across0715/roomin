@@ -15,7 +15,6 @@ ActiveAdmin.register_page "generate_user_pdf" do
     end
 
     def create
-      # binding.pry
 
       # パスワード（ランダムな文字列）のリスト（配列）を作成。
       # 個数は入力画面で決定した個数とする
