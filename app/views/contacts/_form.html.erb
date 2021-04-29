@@ -4,6 +4,10 @@
       <%= form.label :content %>
       <%= form.text_area :content, required: true %>
     </div>
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.email_field :email, required: true %>
+    </div>
     <div>
       <%= form.label :image, "画像ファイル" %>
       <%= form.file_field :image %>
