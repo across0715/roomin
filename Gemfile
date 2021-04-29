@@ -40,6 +40,8 @@ gem 'activeadmin'
 
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog-aws'
+
 
 gem  'rqrcode'
 gem  'rqrcode_png'
