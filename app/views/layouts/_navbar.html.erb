@@ -1,16 +1,16 @@
 <div class= "navbar">
   <% if controller_name == "home"%>
-    <%= link_to t(".Logout"), destroy_user_session_path, method: :delete %>
-    <%= link_to t(".Things_in_the_bedroom"),{ anchor: "#in_room" } %>
-    <%= link_to t(".Things_in_the_bathroom"),{ anchor:"#in_bath"} %>
-    <%= link_to t(".Things_at_the_counter") ,{ anchor: "#at_counter" } %>
-    <%= link_to t(".contact_form"),new_contact_path %>
+    <%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu"%>
+    <%= link_to t(".Things_in_the_bedroom"), "#in_room" , class: "nav_menu" %>
+    <%= link_to t(".Things_in_the_bathroom"), "#in_bath", class: "nav_menu" %>
+    <%= link_to t(".Things_at_the_counter") ,"#at_counter", class: "nav_menu" %>
+    <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%>
   <% elsif controller_name == "devise"%>
-    <%= link_to t(".Return_to_the_amenity_list"), root_path %>
-    <%= link_to t(".contact_form"),new_contact_path %>
+    <%= link_to t(".Return_to_the_amenity_list"), root_path , class: "nav_menu"%>
+    <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%>
   <% elsif controller_name == "contacts" %>
-    <%= link_to t(".Logout"), destroy_user_session_path, method: :delete %>
-    <%= link_to t(".Return_to_the_amenity_list"), root_path %>
+    <%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu" %>
+    <%= link_to t(".Return_to_the_amenity_list"), root_path , class: "nav_menu"%>
   <% else %>
   <% end %>
 </div>

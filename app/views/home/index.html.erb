@@ -6,27 +6,27 @@
   <h1><%= t(".amenity_list") %></h1>
   <br>
   <%= form_with url: orders_path, local: true do |form| %>
-    <section id="in_room">
+    <div id="in_room">
       <h2><%= t(".Things_in_the_bedroom") %></h2>
       <div class="picture_set">
         <% @room_products.each do |product| %>
           <%= render 'order_form', product: product, form: form %>
         <% end %><!-----   each --->
       </div>
-    </section>
-    <section id="in_bath">
+    </div>
+    <div id="in_bath">
       <h2><%= t(".Things_in_the_bathroom") %></h2>
       <div class="picture_set">
         <% @bath_products.each do |product| %>
           <%= render 'order_form', product: product, form: form %>
         <% end %>
       </div>
-    </section>
+    </div>
     <div class= "button">
       <%= form.button "注文" %>
     </div>
   <% end %><!--- form with -->
-  <section id="at_counter">
+  <div id="at_counter">
     <h2> <%= t(".Things_at_the_counter") %></h2>
     <div class="picture_set">
       <% @counter_products.each do |product| %>
@@ -38,6 +38,6 @@
         </div>
       <% end %>
     </div>
-  </section>
+  </div>
 </div>
 <!-- ^ ----------- wrapper  ---------------->
