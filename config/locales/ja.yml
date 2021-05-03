@@ -9,11 +9,15 @@ ja:
   home:
     index:
       title: 利用規約
+      no_damaging_behavior: 人に迷惑をかける注文禁止
+      take_responsibility_for: ホテル及び他人に被害が出た場合、責任を負います。
+      things_to_watch_out_for: 注文時注意すべき事項
       amenity_list: 備品リスト
       Things_in_the_bedroom: お部屋にある物
       Things_in_the_bathroom: 風呂場にある物
       Things_at_the_counter: カウンターでもらえます
       scissors: ハサミ
+      cutter knife: カッターナイフ 
       
     order_form:
       available: 貸出し可
@@ -24,6 +28,7 @@ ja:
       face towel: フェースタオル
       tooth brush: 歯ブラシ
       bath towel: バスタオル
+      wine opener: ワインオープナー
       
 
         
@@ -39,6 +44,7 @@ ja:
       Things_in_the_bathroom: 風呂場にある物
       Things_at_the_counter: カウンターでもらえます
       Logout: ログアウト
+      selecting_language: 言語を選択してください
 
   activerecord:
     models:

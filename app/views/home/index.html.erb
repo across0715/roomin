@@ -1,13 +1,13 @@
 <div class= "wrapper">
-  <h5><%= t(".no_damaging_behavior") %>イタズラ行為禁止</h5>
-  <h5><%= t(".take_responsibility_for") %>責任取らせる</h5>
-  <h5><%= t(".ect") %>などなど</h5>
-  <h5><%= t(".things_to_Watch_Out_for") %>注意すべき事項</h5>
+  <h3><%= t(".no_damaging_behavior") %></h3>
+  <h3><%= t(".take_responsibility_for") %></h3>
+  <!--- <h5><%= t(".ect") %>などなど</h5> -->
+  <h3><%= t(".things_to_watch_out_for") %></h3>
   <h1><%= t(".amenity_list") %></h1>
   <br>
   <%= form_with url: orders_path, local: true do |form| %>
     <div id="in_room">
-      <h2><%= t(".Things_in_the_bedroom") %></h2>
+      <h2 class="product_category"><%= t(".Things_in_the_bedroom") %></h2>
       <div class="picture_set">
         <% @room_products.each do |product| %>
           <%= render 'order_form', product: product, form: form %>
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div id="in_bath">
-      <h2><%= t(".Things_in_the_bathroom") %></h2>
+      <h2 class="product_category"><%= t(".Things_in_the_bathroom") %></h2>
       <div class="picture_set">
         <% @bath_products.each do |product| %>
           <%= render 'order_form', product: product, form: form %>
@@ -23,11 +23,11 @@
       </div>
     </div>
     <div class= "button">
-      <%= form.button "注文" %>
+      <%= form.button "注文", id: "order_button" %>
     </div>
   <% end %><!--- form with -->
   <div id="at_counter">
-    <h2> <%= t(".Things_at_the_counter") %></h2>
+    <h2 class="product_category"><%= t(".Things_at_the_counter") %></h2>
     <div class="picture_set">
       <% @counter_products.each do |product| %>
         <div class ="img_frame">

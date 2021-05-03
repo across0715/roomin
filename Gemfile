@@ -42,6 +42,9 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
 
+gem 'flag_icon_css_rails'
+gem "font-awesome-rails"
+
 
 gem  'rqrcode'
 gem  'rqrcode_png'

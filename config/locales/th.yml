@@ -7,11 +7,15 @@ th:
   home:
     index:
       title: ข้อบังคับใช้
+      no_damaging_behavior: การสั่งสินค้าโดยไม่ให้ผู้อื่น
+      take_responsibility_for: หากเกิดความเสียหายเกิดขึ้นกับโรงแรมและบุคคลอื่น จะเป็นผู้รับผิดชอบ
+      things_to_watch_out_for: สิ่งที่จะต้องระวังเมื่อสั่งอาหาร
       amenity_list: รายการการแสดงความยินดี
       Things_in_the_bedroom: ของที่อยู่ในห้องนอน
       Things_in_the_bathroom: ของที่อยู่ในห้องน้ำ
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์
       scissors: กรรไกร
+      cutter knife: มีดตัดคอ
 
     order_form:
       available: กู้ยืมได้
@@ -22,6 +26,7 @@ th:
       face towel: ผ้าเช็ดหน้า
       tooth brush: แปรงสีฟัน
       bath towel: ผ้าเช็ดตัวอาบน้ำ
+      wine opener: เครื่องเปิดไวน์
 
   layouts:
     navbar:
@@ -32,6 +37,7 @@ th:
       Things_in_the_bathroom: ของที่อยู่ในห้องน้ำ
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์
       Logout: ออกจากระบบ
+      selecting_language: ช่วยเลือกภาษาด้วยครับ
   date:
     abbr_day_names:
       - อา

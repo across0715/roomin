@@ -2,11 +2,15 @@ fr-FR:
   home:
     index:
       title: Règle d'utilisation
+      no_damaging_behavior: Interdit de commander pour éviter les autres.
+      take_responsibility_for: Je suis responsable des dommages causés à l'hôtel et à d'autres personnes.
+      things_to_watch_out_for: Attention quand vous commandez
       amenity_list: Liste des agréments
       Things_in_the_bedroom: Tout ce qui est dans la chambre.
       Things_in_the_bathroom: Objets dans la salle de bain
       Things_at_the_counter: Disponible au comptoir
       scissors: ciseaux
+      cutter knife: couteau
     order_form:
       available: disponible
       quantity: quantité
@@ -16,6 +20,7 @@ fr-FR:
       face towel: face towel
       tooth brush: brosse à dents
       bath towel: serviette de bain
+      wine opener: Vins ouverts
 
   layouts:
     navbar:
@@ -26,6 +31,7 @@ fr-FR:
       Things_in_the_bathroom: Objets dans la salle de bain
       Things_at_the_counter: Disponible au comptoir
       Logout: Logout
+      selecting_language: Choisissez la langue.
 
   activerecord:
     errors:

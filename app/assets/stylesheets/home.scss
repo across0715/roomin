@@ -6,21 +6,38 @@
   box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
   background-color: aqua;
 }
+// navbar
 .navbar {
   height: 60px;
   width: 100%;
-  background-color: gold;
+  background-color: #89c7de;
+  padding: 20px 0;
+}
+#nav_box {
+  display: flex;
   text-align: right;
+  flex-direction: row-reverse;
+  .nav_menu {
+    color: white;
+  }
+}
+.nav_menu {
+  width: auto;
+  height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  line-height: 45px;
+  background-color: thistle;
+  margin-top: 10px;
+  font-size: 15px;
 }
 .navbar a {
   text-decoration: none;
-  margin-right: 30px;
-  line-height: 60px;
-}
-.nav_menu {
-  width: 300px;
-  height: 80px;
-  background-color: rgb(225, 145, 40);
+  background-color: tomato;
+
+  margin-right: 3px;
+  border-radius: 10px;
 }
 #in_room {
   background-color: rgb(105, 185, 255);
@@ -33,6 +50,19 @@
   background-color: hotpink;
 }
 
+// 言語box
+#selectedLocale {
+  height: 30px;
+  width: 140px;
+}
+
+#select_box {
+  width: 300px;
+
+  background-color: violet;
+  padding-left: 40px;
+}
+
 .picture_set {
   display: flex;
   margin-top: 100px;
@@ -43,14 +73,46 @@
   height: 550px;
   // background-color: greenyellow;
   text-align: center;
+  line-height: 50px;
 }
 .p_img {
   height: 300px;
   width: 300px;
   background-color: bisque;
-  object-fit: cover;
+  object-fit: fill;
   margin: auto;
+
   background-color: white;
+}
+#in_room,
+#in_bath,
+#at_counter {
+  text-align: center;
+}
+.button {
+  text-align: center;
+}
+
+#order_button {
+  width: 200px;
+  height: 50px;
+  background-color: #e6e6fa;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 20px 0;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+#order_button:hover {
+  background-color: orange;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.product_category {
+  font-size: 30px;
+  padding-top: 130px;
 }
 
 .contact_form {
@@ -66,7 +128,7 @@
   background-color: #89c7de;
   color: #fff;
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
 
   position: absolute; /*←絶対位置*/
   bottom: 0; /*下に固定*/

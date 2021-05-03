@@ -1,30 +1,39 @@
 <div class= "navbar">
   <% if controller_name == "home"%>
-    <%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu"%>
-    <%= link_to t(".Things_in_the_bedroom"), "#in_room" , class: "nav_menu" %>
-    <%= link_to t(".Things_in_the_bathroom"), "#in_bath", class: "nav_menu" %>
-    <%= link_to t(".Things_at_the_counter") ,"#at_counter", class: "nav_menu" %>
-    <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%>
-  <% elsif controller_name == "devise"%>
-    <%= link_to t(".Return_to_the_amenity_list"), root_path , class: "nav_menu"%>
-    <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%>
-  <% elsif controller_name == "contacts" %>
-    <%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu" %>
-    <%= link_to t(".Return_to_the_amenity_list"), root_path , class: "nav_menu"%>
-  <% else %>
-  <% end %>
+    <div id="nav_box">
+      <%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu"%>
+      <%= link_to t(".Things_in_the_bedroom"), "#in_room" , class: "nav_menu" %>
+      <%= link_to t(".Things_in_the_bathroom"), "#in_bath", class: "nav_menu" %>
+      <%= link_to t(".Things_at_the_counter") ,"#at_counter", class: "nav_menu" %>
+      <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%>
+    <% elsif controller_name == "devise"%>
+      <%= link_to t(".Return_to_the_amenity_list"), root_path , class: "nav_menu"%>
+      <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%>
+    <% elsif controller_name == "contacts" %>
+      <%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu" %>
+      <%= link_to t(".Return_to_the_amenity_list"), root_path , class: "nav_menu"%>
+    <% else %>
+    <% end %>
+  </div>
 </div>
 <div class="navbar-item">
   <div class="control has-icons-left">
     <div class="select is-small is-rounded">
-      <select id="selectedLocale">
-        <% selectable_locale_list.each do |locale| %>
-          <option value="<%= locale[:value] %>"<%= I18n.locale == locale[:value] ? ' selected' : '' %>><%= locale[:name] %></option>
-        <% end %>
-      </select>
+      <div id= "select_box">
+        <i class="flag-icon flag-icon-jp flag-icon-squared"></i>
+        <i class="flag-icon flag-icon-gb flag-icon-squared"></i>
+        <i class="flag-icon flag-icon-cn flag-icon-squared"></i>
+        <i class="flag-icon flag-icon-fr flag-icon-squared"></i>
+        <i class="flag-icon flag-icon-th flag-icon-squared"></i>
+        <p><%= t(".selecting_language") %></p>
+        <select id="selectedLocale">
+          <% selectable_locale_list.each do |locale| %>
+            <option value="<%= locale[:value] %>"<%= I18n.locale == locale[:value] ? ' selected' : '' %>><%= locale[:name] %></option>
+          <% end %>
+        </select>
+      </div>
     </div>
     <span class="icon is-small is-left">
-      <i class="fas fa-globe"></i>
     </span>
   </div>
 </div>

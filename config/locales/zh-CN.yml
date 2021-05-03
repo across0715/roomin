@@ -10,11 +10,16 @@ zh-CN:
   home:
     index:
       title: 使用规则
+      no_damaging_behavior: 禁止对他人造成伤害的订单
+      take_responsibility_for: 酒店及他人受到损害时，将承担责任。
+      things_to_watch_out_for: 需要注意的事项
       amenity_list: 善意清单
       Things_in_the_bedroom: 卧室里的东西
       Things_in_the_bathroom: 浴室里的东西
       Things_at_the_counter: 柜台上的东西
       scissors: 剪子
+      cutter knife: 切刀
+
     order_form:
       available: 可用的
       quantity: 数量
@@ -24,6 +29,7 @@ zh-CN:
       face towel: 脸巾
       tooth brush: 牙刷
       bath towel: 浴巾
+      wine opener: 开酒器
 
   layouts:
     navbar:
@@ -34,6 +40,7 @@ zh-CN:
       Things_in_the_bathroom: 浴室里的东西
       Things_at_the_counter: 柜台上的东西
       Logout: 注销
+      selecting_language: 请选择语言
 
   date:
     abbr_day_names:
