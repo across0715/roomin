@@ -1,3 +1,32 @@
-// Place all the styles related to the Contacts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.navbar {
+  height: 60px;
+  width: 100%;
+  background-color: #89c7de;
+  padding: 20px 0;
+}
+#nav_box {
+  display: flex;
+  text-align: right;
+  flex-direction: row-reverse;
+  .nav_menu {
+    color: white;
+  }
+}
+.nav_menu {
+  width: auto;
+  height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  line-height: 45px;
+  background-color: thistle;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.navbar a {
+  text-decoration: none;
+  background-color: tomato;
+
+  margin-right: 3px;
+  border-radius: 10px;
+}

@@ -1,5 +1,9 @@
+body {
+  position: relative; /*←相対位置*/
+}
+
 .wrapper {
-  padding: 20px;
+  padding: 50px;
   min-height: 100vh;
   position: relative; /*←相対位置*/
   padding-bottom: 120px; /*←footerの高さ*/
@@ -39,6 +43,9 @@
   margin-right: 3px;
   border-radius: 10px;
 }
+.nav_menu:first-of-type {
+  margin-right: 50px;
+}
 #in_room {
   background-color: rgb(105, 185, 255);
   grid: flex;
@@ -60,13 +67,30 @@
   width: 300px;
 
   background-color: violet;
-  padding-left: 40px;
+  padding-left: 70px;
+}
+h1 {
+  margin-top: 50px;
 }
 
 .picture_set {
   display: flex;
   margin-top: 100px;
   background-color: rgb(232, 131, 131);
+}
+.product_title {
+  font-size: 20px;
+}
+#available {
+  font-size: 20px;
+}
+#quantity {
+  font-size: 20px;
+}
+#quantity_field {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
 }
 .img_frame {
   width: 600px;
@@ -78,12 +102,19 @@
 .p_img {
   height: 300px;
   width: 300px;
-  background-color: bisque;
-  object-fit: fill;
+  border-radius: 40px;
+  object-fit: cover;
   margin: auto;
 
   background-color: white;
 }
+.img {
+  margin-top: 15%;
+  height: 70%;
+  width: 70%;
+  object-fit: cover;
+}
+
 #in_room,
 #in_bath,
 #at_counter {

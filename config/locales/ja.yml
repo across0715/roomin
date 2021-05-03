@@ -18,6 +18,8 @@ ja:
       Things_at_the_counter: カウンターでもらえます
       scissors: ハサミ
       cutter knife: カッターナイフ 
+      order: 注文
+    
       
     order_form:
       available: 貸出し可
@@ -29,6 +31,7 @@ ja:
       tooth brush: 歯ブラシ
       bath towel: バスタオル
       wine opener: ワインオープナー
+      
       
 
         
@@ -45,6 +48,7 @@ ja:
       Things_at_the_counter: カウンターでもらえます
       Logout: ログアウト
       selecting_language: 言語を選択してください
+  
 
   activerecord:
     models:

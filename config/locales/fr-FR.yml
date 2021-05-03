@@ -11,6 +11,7 @@ fr-FR:
       Things_at_the_counter: Disponible au comptoir
       scissors: ciseaux
       cutter knife: couteau
+      order: Commande
     order_form:
       available: disponible
       quantity: quantité

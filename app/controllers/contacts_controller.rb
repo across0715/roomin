@@ -5,6 +5,9 @@ class ContactsController < ApplicationController
   def index
   end
 
+  def new
+  end
+
   # POST /contacts or /contacts.json
   def create
     ContactMailer.contact_mail(contact_params).deliver_now

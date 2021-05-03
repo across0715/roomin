@@ -16,6 +16,7 @@ th:
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์
       scissors: กรรไกร
       cutter knife: มีดตัดคอ
+      order: การสั่งงาน
 
     order_form:
       available: กู้ยืมได้

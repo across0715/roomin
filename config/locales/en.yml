@@ -14,6 +14,7 @@ en:
     order_form:
       available: available
       out_of_stock: out of stock
+      order: order
     form_with:
 
   layouts:

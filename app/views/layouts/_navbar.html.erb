@@ -6,15 +6,20 @@
       <%= link_to t(".Things_in_the_bathroom"), "#in_bath", class: "nav_menu" %>
       <%= link_to t(".Things_at_the_counter") ,"#at_counter", class: "nav_menu" %>
       <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%>
-    <% elsif controller_name == "devise"%>
+    </div>
+  <% elsif controller_name == "devise"%>
+    <div id="nav_box">
       <%= link_to t(".Return_to_the_amenity_list"), root_path , class: "nav_menu"%>
       <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%>
-    <% elsif controller_name == "contacts" %>
+    </div>
+  <% elsif controller_name == "contacts" %>
+    <div id="nav_box">
       <%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu" %>
       <%= link_to t(".Return_to_the_amenity_list"), root_path , class: "nav_menu"%>
-    <% else %>
-    <% end %>
-  </div>
+    </div>
+  <% else %>
+  <% end %>
+</div>
 </div>
 <div class="navbar-item">
   <div class="control has-icons-left">
