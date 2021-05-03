@@ -1,32 +1,9 @@
-.navbar {
-  height: 60px;
-  width: 100%;
-  background-color: #89c7de;
-  padding: 20px 0;
+#contact_title {
+  background-color: gold;
 }
-#nav_box {
-  display: flex;
-  text-align: right;
-  flex-direction: row-reverse;
-  .nav_menu {
-    color: white;
-  }
-}
-.nav_menu {
-  width: auto;
-  height: 40px;
-  padding-right: 10px;
-  padding-left: 10px;
-  text-align: center;
-  line-height: 45px;
-  background-color: thistle;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.navbar a {
-  text-decoration: none;
-  background-color: tomato;
-
-  margin-right: 3px;
-  border-radius: 10px;
+.contact_form {
+  margin-top: 30px;
+  background-color: #f0f8ff;
+  width: 800px;
+  height: 500px;
 }

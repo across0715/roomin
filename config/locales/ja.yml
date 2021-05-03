@@ -1,7 +1,10 @@
 ja:
   activerecord:
     models:
-      
+      contacts:
+        form:
+          contact_title: お問い合わせ   
+          content: 内容
         
     attributes:
 
@@ -19,8 +22,12 @@ ja:
       scissors: ハサミ
       cutter knife: カッターナイフ 
       order: 注文
+  contacts:
+    new:  
+      contact_title: お問い合わせ     
+      content: 内容
     
-      
+    
     order_form:
       available: 貸出し可
       quantity: 数量
@@ -31,12 +38,8 @@ ja:
       tooth brush: 歯ブラシ
       bath towel: バスタオル
       wine opener: ワインオープナー
-      
-      
+    
 
-        
-          
-      
       
   layouts:
     navbar:
@@ -48,6 +51,7 @@ ja:
       Things_at_the_counter: カウンターでもらえます
       Logout: ログアウト
       selecting_language: 言語を選択してください
+    
   
 
   activerecord:
@@ -58,6 +62,11 @@ ja:
         accept: '未対応'
         complete: '対応済'
         unavailable: '対応不可'
+    contacts:
+       new:
+        contact_title: お問い合わせ    
+         
+      
 
   attributes:
     id: ID
@@ -75,12 +84,18 @@ ja:
     body: 本文
     accept: 未対応
     
+         
     product: 備品
     user: 注文客名
     available: 貸出し可
     out_of_stock: 在庫切れ  
-      
+    
       
         
        
      
+
+        
+          
+      
+      
