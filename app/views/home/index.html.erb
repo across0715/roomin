@@ -30,7 +30,7 @@
     <h2 class="product_category"><%= t(".Things_at_the_counter") %></h2>
     <div class="picture_set">
       <% @counter_products.each do |product| %>
-        <div class ="img_frame">
+        <div class ="img_frame" >
           <div class= "product_title"><%= t(".#{product.name}") %></div>
           <% if product.image? %>
             <div class= "p_img"><%= image_tag product.image.url ,class: "img"%></div>

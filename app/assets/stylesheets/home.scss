@@ -3,18 +3,19 @@ body {
 }
 
 .wrapper {
+  color: #696969;
   padding: 50px;
   min-height: 100vh;
   position: relative; /*←相対位置*/
   padding-bottom: 120px; /*←footerの高さ*/
   box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
-  background-color: aqua;
+  background-color: #ffffff;
 }
 // navbar
 .navbar {
   height: 60px;
   width: 100%;
-  background-color: #89c7de;
+  background-color: #afeeee;
   padding: 20px 0;
 }
 #nav_box {
@@ -32,29 +33,32 @@ body {
   padding-left: 10px;
   text-align: center;
   line-height: 45px;
-  background-color: thistle;
+  background-color: #afafed;
   margin-top: 10px;
   font-size: 15px;
 }
 .navbar a {
   text-decoration: none;
-  background-color: tomato;
+  background-color: #afafed;
 
   margin-right: 3px;
   border-radius: 10px;
+}
+.navbar a:hover {
+  background-color: orange;
 }
 .nav_menu:first-of-type {
   margin-right: 50px;
 }
 #in_room {
-  background-color: rgb(105, 185, 255);
   grid: flex;
+  background-color: #f8f8ff;
 }
 #in_bath {
-  background-color: yellow;
+  background-color: #f8f8ff;
 }
 #at_counter {
-  background-color: hotpink;
+  background-color: #f8f8ff;
 }
 
 // 言語box
@@ -64,28 +68,43 @@ body {
 }
 
 #select_box {
-  width: 300px;
-
-  background-color: violet;
+  padding: 20px;
+  // width: 300px;
+  border-radius: 10px;
+  background-color: #f0f8ff;
   padding-left: 70px;
 }
 h1 {
   margin-top: 50px;
 }
+#lan_select {
+  color: tomato;
+  font-size: 20px;
+}
 
 .picture_set {
+  padding: 20px 0;
   display: flex;
-  margin-top: 100px;
-  background-color: rgb(232, 131, 131);
+
+  background-color: #f5f5f5;
+
+  justify-content: center;
+  align-items: center;
 }
+
 .product_title {
+  margin-bottom: 10px;
   font-size: 20px;
+  color: tomato;
 }
+
 #available {
   font-size: 20px;
+  margin-top: 10px;
 }
 #quantity {
   font-size: 20px;
+  margin: 10px 0;
 }
 #quantity_field {
   width: 100px;
@@ -94,10 +113,9 @@ h1 {
 }
 .img_frame {
   width: 600px;
-  height: 550px;
+  height: auto;
   // background-color: greenyellow;
   text-align: center;
-  line-height: 50px;
 }
 .p_img {
   height: 300px;
@@ -105,13 +123,13 @@ h1 {
   border-radius: 40px;
   object-fit: cover;
   margin: auto;
-
+  line-height: 150px;
   background-color: white;
 }
 .img {
-  margin-top: 15%;
-  height: 70%;
-  width: 70%;
+  padding-top: 20%;
+  height: 65%;
+  width: 65%;
   object-fit: cover;
 }
 
@@ -119,6 +137,7 @@ h1 {
 #in_bath,
 #at_counter {
   text-align: center;
+  background-color: white;
 }
 .button {
   text-align: center;
@@ -127,11 +146,12 @@ h1 {
 #order_button {
   width: 200px;
   height: 50px;
-  background-color: #e6e6fa;
+  background-color: #afafed;
   margin-right: auto;
   margin-left: auto;
   margin: 20px 0;
   border-radius: 50px;
+  border: none;
   font-size: 20px;
 }
 
@@ -143,7 +163,9 @@ h1 {
 }
 .product_category {
   font-size: 30px;
-  padding-top: 130px;
+  padding-top: 10px;
+  background-color: #f0f8ff;
+  line-height: 85px;
 }
 
 .contact_form {
@@ -156,11 +178,15 @@ h1 {
 .footer {
   width: 100%;
 
-  background-color: #89c7de;
+  background-color: #afeeee;
   color: #fff;
+  font-size: 20px;
   text-align: center;
   padding: 20px 0;
 
   position: absolute; /*←絶対位置*/
   bottom: 0; /*下に固定*/
+}
+.footer p {
+  font-size: 20px;
 }

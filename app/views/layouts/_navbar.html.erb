@@ -30,7 +30,7 @@
         <i class="flag-icon flag-icon-cn flag-icon-squared"></i>
         <i class="flag-icon flag-icon-fr flag-icon-squared"></i>
         <i class="flag-icon flag-icon-th flag-icon-squared"></i>
-        <p><%= t(".selecting_language") %></p>
+        <p id= "lan_select"><%= t(".selecting_language") %></p>
         <select id="selectedLocale">
           <% selectable_locale_list.each do |locale| %>
             <option value="<%= locale[:value] %>"<%= I18n.locale == locale[:value] ? ' selected' : '' %>><%= locale[:name] %></option>
