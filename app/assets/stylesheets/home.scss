@@ -6,6 +6,7 @@ body {
   color: #696969;
   padding: 50px;
   min-height: 100vh;
+  width: 100%;
   position: relative; /*←相対位置*/
   padding-bottom: 120px; /*←footerの高さ*/
   box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
@@ -137,10 +138,11 @@ body {
 }
 
 #select_box {
-  padding: 20px;
+  margin-top: 50px;
   // width: 300px;
   border-radius: 10px;
-  background-color: #f0f8ff;
+  // background-color: #f0f8ff;
+  background-color: white;
   padding-left: 70px;
 }
 h1 {
