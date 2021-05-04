@@ -1,10 +1,11 @@
 <div class = "wrapper">
   <div class= "polish_box">
-    <h3><%= t(".no_damaging_behavior") %></h3>
-    <h3><%= t(".take_responsibility_for") %></h3>
-    <!--- <h5><%= t(".ect") %>などなど</h5> -->
-    <h3><%= t(".things_to_watch_out_for") %></h3>
-    <h1 id="amenity_list"><%= t(".amenity_list") %></h1>
+    <ul>
+      <li><%= t(".no_damaging_behavior") %></li>
+      <li><%= t(".take_responsibility_for") %></li>
+      <!--- <h5><%= t(".ect") %>などなど</h5> -->
+      <li><%= t(".things_to_watch_out_for") %></li>
+    </ul>
   </div>
   <br>
   <%= form_with url: orders_path, local: true do |form| %>

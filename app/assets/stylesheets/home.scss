@@ -104,6 +104,7 @@ body {
 
 #nav_box {
   display: flex;
+  flex-wrap: wrap;
   text-align: right;
   flex-direction: row-reverse;
   .nav_menu {
@@ -136,23 +137,39 @@ body {
 }
 
 .polish_box {
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  left: 50px;
   width: auto;
   height: 200px;
-  margin-left: 70px;
+}
+ul > li {
+  font-size: 20px;
+  margin-top: 20px;
 }
 #amenity_list {
   font-size: 40px;
+  color: orange;
+  background-color: white;
+  margin-right: 300px;
+  // position: absolute;
+  // top: 20px;
+  // left: 300px;
 
-  margin-bottom: 0px;
+  padding: 20px 40px;
+
+  border: double 4px orange;
+  border-radius: 20px;
 }
-#in_room {
-  background-color: #f8f8ff;
-}
+#in_room,
 #in_bath {
+  padding-top: 200px;
   background-color: #f8f8ff;
 }
 #at_counter {
   background-color: #f8f8ff;
+  margin-bottom: 100px;
 }
 
 // 言語box
@@ -170,9 +187,6 @@ body {
   padding-left: 70px;
 }
 
-h1 {
-  margin-top: 50px;
-}
 #lan_select {
   color: tomato;
   font-size: 15px;
