@@ -36,6 +36,7 @@ en:
       confirmed: Your email address has been successfully confirmed.
       new:
         resend_confirmation_instructions: Resend confirmation instructions
+
       send_instructions: You will receive an email with instructions for how to confirm your email address in a few minutes.
       send_paranoid_instructions: If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes.
     failure:
@@ -117,7 +118,7 @@ en:
       already_signed_out: Signed out successfully.
       new:
         sign_in: Log in
-
+        greeting: Welcome to the Mitsui Garden Hotel
         title: This is a Room Service App.
         language_select: Please select a language.
 

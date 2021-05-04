@@ -11,6 +11,79 @@ body {
   box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
   background-color: #ffffff;
 }
+.wrapper_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(room/hotel_lobby_2.jpg);
+  // background-image: url(room/mitui_lobby.jpg);
+}
+//sessions/new //
+.inner_new_wrapper {
+  width: 600px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#new_title {
+  color: #e0ffff;
+  background-color: #ff8c00;
+  border-radius: 50px;
+  opacity: 80%;
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+
+  font-weight: bold;
+  font-size: 25px;
+}
+.new_wrapper {
+  width: 500px;
+  height: 600px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new_wrapper_2 {
+  width: 500px;
+  height: 500px;
+
+  border-radius: 30px;
+  padding-left: 20%;
+  padding-top: 20%;
+  position: relative;
+}
+#user_room_number,
+#user_name,
+#user_password {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+}
+.new_label {
+}
+#new_button {
+  width: 200px;
+  height: 50px;
+  background-color: #afafed;
+  opacity: 80%;
+  color: #fff;
+  margin: 35px 0;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  right: 40px;
+}
+#new_button:hover {
+  background-color: orange;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+}
 // navbar
 .navbar {
   height: 60px;

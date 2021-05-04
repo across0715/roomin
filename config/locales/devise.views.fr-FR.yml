@@ -119,6 +119,7 @@ fr-FR:
       new:
         sign_in: Connexion
         title: This is a Room Service App.
+        greeting: Bienvenue à l'hôtel Mitsui Garden.
         language_select: Veuillez sélectionner une langue.
 
       signed_in: Connecté(e).
