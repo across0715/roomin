@@ -8,6 +8,7 @@ en:
   home:
     index:
       title: Usage Regulations
+      no_damaging_behavior: no damaging behavior
       take_responsibility_for: You'll be held responsible for damage to the hotel and others.
       things_to_watch_out_for: Things to watch out for when ordering
       amenity_list: Amenity list

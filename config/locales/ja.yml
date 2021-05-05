@@ -1,12 +1,9 @@
 ja:
   activerecord:
     models:
-      contacts:
-        form:
-          contact_title: お問い合わせ   
-          content: 内容
-        
+      
     attributes:
+    
 
 
   home:
@@ -20,24 +17,25 @@ ja:
       Things_in_the_bathroom: 風呂場にある物
       Things_at_the_counter: カウンターでもらえます
       scissors: ハサミ
-      cutter knife: カッターナイフ 
+      cutter_knife: カッターナイフ 
       order: 注文
   contacts:
     new:  
-      contact_title: お問い合わせ     
-      content: 内容
-    
+      contact_title: お問い合わせ   
+      post:
+        content: 内容
+      
     
     order_form:
       available: 貸出し可
       quantity: 数量
-      out_of_stock: 在庫切れ
+      out of stock: 在庫切れ
       pillow: 枕
       slippers: スリッパ
-      face towel: フェースタオル
-      tooth brush: 歯ブラシ
-      bath towel: バスタオル
-      wine opener: ワインオープナー
+      face_towel: フェースタオル
+      tooth_brush: 歯ブラシ
+      bath_towel: バスタオル
+      wine_opener: ワインオープナー
     
 
       
@@ -51,9 +49,6 @@ ja:
       Things_at_the_counter: カウンターでもらえます
       Logout: ログアウト
       selecting_language: 言語を選択してください
-    
-  
-
   activerecord:
     models:
       admin:
@@ -62,12 +57,7 @@ ja:
         accept: '未対応'
         complete: '対応済'
         unavailable: '対応不可'
-    contacts:
-       new:
-        contact_title: お問い合わせ    
-         
-      
-
+    
   attributes:
     id: ID
     created_at: 作成日時
@@ -75,27 +65,16 @@ ja:
     display: 表示
     name: 名前
     category: 種類
-       
-
     image: イメージ
     orders: 注文
     room_number: 部屋番号
     used: 利用中
     body: 本文
     accept: 未対応
-    
          
     product: 備品
     user: 注文客名
     available: 貸出し可
     out_of_stock: 在庫切れ  
     
-      
-        
-       
-     
-
-        
-          
-      
-      
+  
