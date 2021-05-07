@@ -28,6 +28,8 @@ th:
       tooth brush: แปรงสีฟัน
       bath towel: ผ้าเช็ดตัวอาบน้ำ
       wine opener: เครื่องเปิดไวน์
+      blanket: couverture
+      shampoo set: Shampooing ensemble
 
   layouts:
     navbar:

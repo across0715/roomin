@@ -8,7 +8,7 @@
     <div class="field">
       <%= form.hidden_field "order[][product_id]", value: product.id %>
       <%= form.label :quantity, t(".quantity") ,id: "quantity"%>
-      <%= form.number_field :quantity, name: "order[][quantity]" ,min: 0 ,max: 5, value: 0 ,required: true,id: "quantity_field" %>
+      <%= form.number_field :quantity, name: "order[][quantity]" ,min: 0 ,max: 5, value: 0 ,required: true, id: "quantity_field" %>
     </div>
   <% else %>
     <div><%= t(".out_of_stock") %></div>

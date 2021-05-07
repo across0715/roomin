@@ -18,11 +18,12 @@ fr-FR:
       out_of_stock: out of stock
       pillow: tail
       slippers: pantoufles
-      face towel: face towel
+      face towel: serviette de visage
       tooth brush: brosse à dents
       bath towel: serviette de bain
       wine opener: Vins ouverts
-
+      blanket: couverture
+      shampoo set: Shampooing ensemble
   layouts:
     navbar:
       Return_to_the_amenity_list: Retour à la non-liste

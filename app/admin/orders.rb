@@ -5,8 +5,8 @@ ActiveAdmin.register Order do
   preserve_default_filters!
   filter :status, as: :select, collection: Order.statuses_i18n.invert.transform_values { |v| Order.statuses[v] }
 
-  actions :all, except: [:destroy]
-
+  actions :all
+  # actions :all, except: [:destroy]
   index do
     selectable_column
     id_column

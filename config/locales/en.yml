@@ -28,6 +28,8 @@ en:
       bath towel: bath towel
       wine opener: wine opener
       order: order
+      blanket: blanket
+      shampoo set: shampoo set
     form_with:
 
   layouts:

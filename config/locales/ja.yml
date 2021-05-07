@@ -17,8 +17,22 @@ ja:
       Things_in_the_bathroom: 風呂場にある物
       Things_at_the_counter: カウンターでもらえます
       scissors: ハサミ
-      cutter_knife: カッターナイフ 
+      cutter knife: カッターナイフ 
+     
       order: 注文
+    order_form:
+      available: 貸出し可
+      quantity: 数量
+      out of stock: 在庫切れ
+      pillow: 枕
+      slippers: スリッパ
+      face towel: フェースタオル
+      tooth brush: 歯ブラシ
+      bath towel: バスタオル
+      blanket: 毛布
+      wine opener: ワイン オプナー
+      shampoo set: シャンプーセット
+      
   contacts:
     new:  
       contact_title: お問い合わせ   
@@ -26,16 +40,7 @@ ja:
         content: 内容
       
     
-    order_form:
-      available: 貸出し可
-      quantity: 数量
-      out of stock: 在庫切れ
-      pillow: 枕
-      slippers: スリッパ
-      face_towel: フェースタオル
-      tooth_brush: 歯ブラシ
-      bath_towel: バスタオル
-      wine_opener: ワインオープナー
+    
     
 
       
