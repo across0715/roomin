@@ -4,8 +4,8 @@
       <li><%= link_to t(".Things_in_the_bedroom"), "#in_room" , class: "nav_menu" %></li>
       <li> <%= link_to t(".Things_in_the_bathroom"), "#in_bath", class: "nav_menu" %></li>
       <li> <%= link_to t(".Things_at_the_counter") ,"#at_counter", class: "nav_menu" %></li>
-      <li><%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu"%></li>
       <li> <%= link_to t(".contact_form"),new_contact_path , class: "nav_menu"%></li>
+      <li><%= link_to t(".Logout"), destroy_user_session_path, method: :delete, class: "nav_menu"%></li>
     </li>
   </ul>
   <div id="amenity_list"><%= t(".amenity_list") %></div>

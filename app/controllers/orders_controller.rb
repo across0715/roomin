@@ -1,5 +1,4 @@
 class OrdersController < ApplicationController
-
   def new
     # orders = order_params
   end
@@ -8,11 +7,11 @@ class OrdersController < ApplicationController
     Order.transaction do
       order_params[:order].each do |param|
         # 注文個数が1個以上ならば注文データを作成する
-        current_user.orders.create!(param) if param[:quantity].to_i > 0 
-        
+        current_user.orders.create!(param) if param[:quantity].to_i > 0
       end
     end
     redirect_to root_path
+    # flash[:success]="成功しました"
     # @orders = Order.new(order_params)
     # if @orders.save
     #   redirect_to orders_path notice: "#"
@@ -20,7 +19,6 @@ class OrdersController < ApplicationController
     #   render :root
     # end
   end
-
 
   private
 
