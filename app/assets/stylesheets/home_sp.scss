@@ -19,7 +19,7 @@
 
   .wrapper {
     margin: 0 auto;
-    background-color: aqua;
+
     height: auto;
     box-sizing: border-box;
     align-items: center;
@@ -27,36 +27,50 @@
     background-color: #ffffff;
     color: #696969;
   }
+  .wrapper p {
+    color: red;
+  }
   .wrapper_2 {
-    background-image: url(room/hotel_lobby_2.jpg);
+    // background-image: url(room/hotel_lobby_2.jpg);
     // background-image: url(room/mitui_lobby.jpg);
+    background-image: url(room/bg.jpg);
+    // background-color: #800000;
   }
   //sessions/new //
   .inner_new_wrapper {
+    max-width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     color: white;
     margin-top: 0;
   }
+  .session_select_item {
+    padding: 20px 0;
+    background-color: #afeeee;
+  }
   #greeting {
-    padding-left: 100px;
+    font-size: 15px;
+    padding: 10px 0;
+    background-color: #fffafa;
   }
   #contact_title {
     position: absolute;
     top: 20px;
   }
   #new_title {
-    color: #e0ffff;
+    color: white;
     background-color: #ff8c00;
     border-radius: 50px;
     opacity: 80%;
     text-align: center;
-    line-height: 60px;
-    height: 60px;
+    line-height: 30px;
+    height: 30px;
 
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
   }
   .new_wrapper {
     font-size: 20px;
@@ -65,34 +79,36 @@
     align-items: center;
   }
   .new_wrapper_2 {
-    height: 500px;
-
-    border-radius: 30px;
-    padding-left: 20%;
-    padding-top: 20%;
     position: relative;
+    margin-bottom: 50px;
   }
   #user_room_number,
   #user_name,
   #user_password {
-    width: 80%;
+    width: 180px;
     height: 30px;
     border-radius: 10px;
   }
   .new_label {
+    margin-top: 30px;
+    font-size: 20px;
   }
   #new_button {
-    width: 200px;
+    margin-left: 0;
+    width: 130px;
+
     height: 50px;
-    background-color: #afafed;
-    opacity: 80%;
-    color: #fff;
-    margin: 35px 0;
+    background-color: white;
+    // opacity: 80%;
+    color: #800000;
     border-radius: 50px;
     border: none;
     font-size: 20px;
-    position: absolute;
-    right: 40px;
+    // position: absolute;
+    // right: 40px;
+
+    // transition: 0.01s;
+    // opacity: 0.7;
   }
   #new_button:hover {
     background-color: orange;

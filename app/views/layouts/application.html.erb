@@ -12,8 +12,11 @@
   </head>
   <body class= "h-100">
     <div class= "wrapper">
-      <%= render "layouts/navbar" %>
-      <%= render "layouts/language" %>
+      <% if controller_name == "home"%>
+        <%= render "layouts/navbar" %>
+      <% else %>
+        <%= render "layouts/language" %>
+      <% end %>
       <%= render "layouts/flash" %>
       <%= yield %>
       <%= render "layouts/footer" %>
