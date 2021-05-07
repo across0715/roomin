@@ -1,26 +1,33 @@
 @media screen and (max-width: 768px) {
-  /* 768pxまでの幅の場合に適応される */
-  .body {
+  /* 599pxまでの幅の場合に適応される */
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    box-sizing: border-box;
+  }
+  .h-100 {
+    margin: auto;
+    width: 100%;
+    position: relative; /*←相対位置*/
+    padding-bottom: 50px; /*←footerの高さ*/
+    box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
   }
   .header {
-    position: relative; /*←相対位置*/
-    padding-bottom: 120px; /*←footerの高さ*/
-    box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
   }
 
   .wrapper {
-    color: #696969;
-    min-height: 100vh;
-    width: 100%;
-    position: relative; /*←相対位置*/
-    padding-bottom: 120px; /*←footerの高さ*/
-    box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
+    margin: 0 auto;
+    background-color: aqua;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
     background-color: #ffffff;
+    color: #696969;
   }
   .wrapper_2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(room/hotel_lobby_2.jpg);
     // background-image: url(room/mitui_lobby.jpg);
   }
@@ -58,7 +65,6 @@
     align-items: center;
   }
   .new_wrapper_2 {
-    width: 500px;
     height: 500px;
 
     border-radius: 30px;
@@ -97,10 +103,9 @@
 
   // navbar
   .navbar {
+    height: auto;
     width: 100%;
     background-color: #afeeee;
-    padding: 20px 0;
-    height: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -108,83 +113,60 @@
   }
 
   #nav_box {
-    min-height: 60px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    display: block;
+
     .nav_menu {
-      color: white;
+      color: grey;
     }
   }
-  .nav_menu {
-    width: auto;
-    height: 40px;
-    padding-right: 10px;
-    padding-left: 10px;
+
+  // .nav_menu:first-of-type {
+  //   margin-right: 50px;
+  // }
+  #nav_box > li {
     text-align: center;
-    line-height: 45px;
-    background-color: #afafed;
-    margin-top: 10px;
-    font-size: 15px;
+
+    font-size: 10px;
+    // list-style: none;
   }
-  .navbar a {
+  #nav_box > li > a {
     text-decoration: none;
-    background-color: #afafed;
-
-    margin-right: 3px;
-    border-radius: 10px;
+    display: block;
+    padding: 10px 0;
+    height: 10px;
+    line-height: 10px;
+    font-weight: bold;
   }
-  .navbar a:hover {
+  #nav_box > li > a:hover {
     background-color: orange;
-  }
-  .nav_menu:first-of-type {
-    margin-right: 50px;
-  }
-
-  .polish_box {
-    position: absolute;
-    font-size: 20px;
-    top: 0;
-    left: 50px;
-    width: auto;
-    height: 200px;
-  }
-  ul > li {
-    font-size: 20px;
-    margin-top: 20px;
+    color: white;
   }
   #amenity_list {
-    font-size: 40px;
+    font-size: 20px;
     color: orange;
     background-color: white;
-
     // position: absolute;
     // top: 20px;
     // left: 300px;
-
-    padding: 20px 40px;
-
+    padding: 5px 0;
     border: double 4px orange;
     border-radius: 20px;
-  }
-  #in_room,
-  #in_bath {
-    padding-top: 200px;
-    background-color: #f8f8ff;
-  }
-  #at_counter {
-    background-color: #f8f8ff;
-    margin-bottom: 100px;
   }
 
   // 言語box
   #selectedLocale {
     height: 30px;
-    width: 140px;
   }
   .select_item {
   }
   #select_box {
+    margin-top: 200px;
+    text-align: left;
+
     // width: 300px;
     border-radius: 10px;
     // background-color: #f0f8ff;
@@ -194,9 +176,28 @@
 
   #lan_select {
     color: tomato;
+    margin: 5px 0;
     font-size: 15px;
   }
 
+  .polish_box {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    padding: 5px 0;
+    background-color: tomato;
+    word-break: break-all;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  .polish_list {
+    list-style-type: square; /* リストの左側に黒丸 */
+    margin-left: 24px; /* リストの左側に余白 */
+    text-align: left;
+  }
+  // 備品のイメージ  css   //////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////
   .picture_set {
     padding: 20px 0;
     display: flex;
@@ -229,13 +230,13 @@
   }
   .img_frame {
     width: 25%;
-    width: 600px;
+    width: 300px;
     height: auto;
     // background-color: greenyellow;
   }
   .p_img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 40px;
     object-fit: cover;
     margin: auto;
@@ -250,11 +251,16 @@
   }
 
   #in_room,
-  #in_bath,
-  #at_counter {
+  #in_bath {
+    background-color: #f8f8ff;
     text-align: center;
-    background-color: white;
   }
+  #at_counter {
+    background-color: #f8f8ff;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
   .button {
     text-align: center;
   }
@@ -280,15 +286,15 @@
   }
   .product_category {
     margin: 0;
-    font-size: 30px;
+    font-size: 17px;
     background-color: #f0f8ff;
-    line-height: 85px;
+    line-height: 30px;
   }
 
   .footer {
     margin-top: auto;
     width: 100%;
-    height: 50px;
+    height: 30px;
     background-color: #afeeee;
     color: #fff;
     font-size: 20px;
@@ -299,5 +305,6 @@
   }
   .footer p {
     font-size: 20px;
+    line-height: 28px;
   }
 }

@@ -10,11 +10,13 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body>
-    <%= render "layouts/navbar" %>
-    <%= render "layouts/language" %>
-    <%= render "layouts/flash" %>
-    <%= yield %>
-    <%= render "layouts/footer" %>
+  <body class= "h-100">
+    <div class= "wrapper">
+      <%= render "layouts/navbar" %>
+      <%= render "layouts/language" %>
+      <%= render "layouts/flash" %>
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>
