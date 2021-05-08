@@ -48,7 +48,6 @@
     margin-top: 0;
   }
   .session_select_item {
-    max-width: 100%;
     padding: 20px 0;
     background-color: #afeeee;
   }
@@ -321,7 +320,7 @@
   }
 
   .inner_contact_form {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     padding-top: 0;
   }
@@ -329,23 +328,25 @@
   .contact_form {
     margin-top: 0;
 
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .contact_field {
-    width: 90%;
+    width: 100%;
   }
   input[type='file' i] {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   input[type='submit' i] {
     margin: 0;
     max-width: 80%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
   }
 
   .footer {
