@@ -48,6 +48,7 @@
     margin-top: 0;
   }
   .session_select_item {
+    max-width: 100%;
     padding: 20px 0;
     background-color: #afeeee;
   }
@@ -56,10 +57,7 @@
     padding: 10px 0;
     background-color: #fffafa;
   }
-  #contact_title {
-    position: absolute;
-    top: 20px;
-  }
+
   #new_title {
     color: white;
     background-color: #ff8c00;
@@ -315,6 +313,39 @@
     font-size: 17px;
     background-color: #f0f8ff;
     line-height: 30px;
+  }
+  /////////  contact  //////////////////////////////////////////////////////////////////
+  #contact_title {
+    // position: absolute;
+    margin-bottom: 0;
+  }
+
+  .inner_contact_form {
+    max-width: 90%;
+    height: auto;
+    padding-top: 0;
+  }
+
+  .contact_form {
+    margin-top: 0;
+
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_field {
+    width: 90%;
+  }
+  input[type='file' i] {
+    font-size: 10px;
+  }
+
+  input[type='submit' i] {
+    margin: 0;
+    max-width: 80%;
+    margin-top: 20px;
   }
 
   .footer {
