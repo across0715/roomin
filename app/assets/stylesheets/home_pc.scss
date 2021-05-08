@@ -94,7 +94,6 @@
   .navbar {
     width: 100%;
     background-color: #afeeee;
-    padding: 20px 0;
 
     position: fixed;
     top: 0;
@@ -103,24 +102,28 @@
   }
 
   #nav_box {
-    min-height: 60px;
     display: flex;
     flex-wrap: wrap;
-    text-align: right;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-basis: content;
+    list-style: none;
     .nav_menu {
       color: white;
     }
   }
+
+  #nav_box li {
+    width: auto;
+    margin-right: -30px;
+  }
   .nav_menu {
     width: auto;
     height: 40px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px 10px;
+    margin-right: 0;
     text-align: center;
     line-height: 45px;
     background-color: #afafed;
-    margin-top: 10px;
     font-size: 15px;
   }
   .navbar a {
@@ -142,21 +145,16 @@
     margin-top: 20px;
   }
   #amenity_list {
-    width: 20%;
-    font-size: 40px;
+    font-size: 30px;
     color: orange;
+    margin-right: 20px;
+    line-height: 40px;
     background-color: white;
-
-    // position: absolute;
-    // top: 20px;
-    // left: 300px;
-
-    padding: 20px 40px;
-
+    padding: 10px 20px;
     border: double 4px orange;
     border-radius: 20px;
   }
-  #in_room,
+
   #in_bath {
     background-color: #f8f8ff;
     padding-top: 100px;
@@ -173,7 +171,7 @@
   }
 
   #select_box {
-    margin-top: 150px;
+    margin-top: 170px;
     // width: 300px;
     border-radius: 10px;
     // background-color: #f0f8ff;
@@ -187,8 +185,15 @@
   }
   .polish_box {
     width: auto;
-    height: 200px;
     font-size: 20px;
+    background-color: red;
+    color: yellow;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  #polish_list {
+    list-style-type: square;
+    font-weight: bold;
   }
 
   .picture_set {
@@ -243,7 +248,6 @@
     object-fit: cover;
   }
   #in_room {
-    margin-top: 0;
   }
 
   #in_room,
