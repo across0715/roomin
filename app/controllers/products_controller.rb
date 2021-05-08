@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def index
+    @product_name = Product.name
   end
 
   private
