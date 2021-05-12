@@ -14,8 +14,6 @@
     padding-bottom: 50px; /*←footerの高さ*/
     box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
   }
-  .header {
-  }
 
   .wrapper {
     margin: 0 auto;
@@ -174,8 +172,7 @@
   #selectedLocale {
     height: 30px;
   }
-  .select_item {
-  }
+
   #select_box {
     margin-top: 200px;
     text-align: left;
@@ -270,7 +267,10 @@
     width: 65%;
     object-fit: cover;
   }
-
+  #in_bath,
+  #at_counter {
+    padding-top: 180px;
+  }
   #in_room,
   #in_bath {
     background-color: #f8f8ff;
@@ -311,11 +311,12 @@
     opacity: 1;
   }
   .product_category {
-    margin: 0;
+    margin-top: 0;
     font-size: 17px;
     background-color: #f0f8ff;
     line-height: 30px;
   }
+
   /////////  contact  //////////////////////////////////////////////////////////////////
   #contact_title {
     // position: absolute;
@@ -368,4 +369,4 @@
     font-size: 20px;
     line-height: 28px;
   }
-}
+} // 閉じタグ

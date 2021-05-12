@@ -2,9 +2,8 @@ ja:
   activerecord:
     models:
       
-    attributes:
-    
 
+    attributes:
 
   home:
     index:
@@ -18,8 +17,11 @@ ja:
       Things_at_the_counter: カウンターでもらえます
       scissors: ハサミ
       cutter knife: カッターナイフ 
-     
+
+    error:
+      
       order: 注文
+
     order_form:
       available: 貸出し可
       quantity: 数量
@@ -32,18 +34,13 @@ ja:
       blanket: 毛布
       wine opener: ワイン オプナー
       shampoo set: シャンプーセット
-      
+  
   contacts:
     new:  
       contact_title: お問い合わせ   
       post:
         content: 内容
-      
-    
-    
-    
-
-      
+           
   layouts:
     navbar:
       Return_to_the_amenity_list: 備品リストに戻る
@@ -54,6 +51,9 @@ ja:
       Things_at_the_counter: カウンターでもらえます
       Logout: ログアウト
       selecting_language: 言語を選択してください
+
+
+
   activerecord:
     models:
       admin:
@@ -62,7 +62,7 @@ ja:
         accept: '未対応'
         complete: '対応済'
         unavailable: '対応不可'
-    
+  
   attributes:
     id: ID
     created_at: 作成日時
@@ -82,4 +82,9 @@ ja:
     available: 貸出し可
     out_of_stock: 在庫切れ  
     
+      
+
+      
+    
   
+    

@@ -1,4 +1,5 @@
 <% flash.each do |flash_type, msg| %>
-  <p><%= msg %></p>
+  <!-- <div id="flash_msg"><%= msg %></div> -->
+  <div id="flash_msg"><%= t(".#{msg}") %></div>
   <hr>
 <% end %>

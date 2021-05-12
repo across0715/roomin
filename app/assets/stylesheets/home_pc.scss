@@ -2,7 +2,10 @@
   body {
     position: relative; /*←相対位置*/
   }
-
+  p {
+    font-size: 130px;
+    color: red;
+  }
   .wrapper {
     color: #696969;
     margin-top: 0;
@@ -20,6 +23,7 @@
     background-image: url(room/hotel_lobby_2.jpg);
     // background-image: url(room/mitui_lobby.jpg);
   }
+
   //sessions/new //
   .session_select_item {
     margin-top: 100px;

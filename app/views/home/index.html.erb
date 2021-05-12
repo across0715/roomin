@@ -1,30 +1,30 @@
-
 <div class= "polish_box">
-    <ul id= "polish_list">
-      <li class= "polish_list"><%= t(".no_damaging_behavior") %></li>
-      <li class= "polish_list"><%= t(".take_responsibility_for") %></li>
-      <!--- <h5><%= t(".ect") %>などなど</h5> -->
-      <li class= "polish_list"><%= t(".things_to_watch_out_for") %></li>
-    </ul>
+  <ul id= "polish_list">
+    <li class= "polish_list"><%= t(".no_damaging_behavior") %></li>
+    <li class= "polish_list"><%= t(".take_responsibility_for") %></li>
+    <!--- <h5><%= t(".ect") %>などなど</h5> -->
+    <li class= "polish_list"><%= t(".things_to_watch_out_for") %></li>
+  </ul>
 </div>
-  <br>
-  <%= form_with url: orders_path, local: true do |form| %>
-<div id="in_room">
+<br>
+<%= form_with url: orders_path, local: true do |form| %>
+  <div class="offset">
+    <div id="in_room">
       <h2 class="product_category"><%= t(".Things_in_the_bedroom") %></h2>
       <div class="picture_set">
         <% @room_products.each do |product| %>
           <%= render 'order_form', product: product, form: form %>
         <% end %><!-----   each --->
       </div>
-</div>
-<div id="in_bath">
+    </div>
+    <div id="in_bath">
       <h2 class="product_category"><%= t(".Things_in_the_bathroom") %></h2>
       <div class="picture_set">
         <% @bath_products.each do |product| %>
           <%= render 'order_form', product: product, form: form %>
         <% end %>
       </div>
-</div>
+    </div>
     <div class= "button">
       <%= form.button t(".order") ,id: "order_button" %>
     </div>
@@ -42,5 +42,6 @@
       <% end %>
     </div>
   </div>
+</div>
 </div>
 <!-- ^ ----------- wrapper  ---------------->
