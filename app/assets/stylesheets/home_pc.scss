@@ -21,6 +21,11 @@
     // background-image: url(room/mitui_lobby.jpg);
   }
   //sessions/new //
+  .session_select_item {
+    margin-top: 100px;
+    margin-left: 3%;
+  }
+
   .inner_new_wrapper {
     display: flex;
     justify-content: center;
@@ -29,7 +34,7 @@
     margin-top: 0;
   }
   #greeting {
-    padding-left: 100px;
+    padding-left: 200px;
   }
   #contact_title {
     position: absolute;
@@ -173,10 +178,11 @@
   #select_box {
     margin-top: 170px;
     // width: 300px;
+
     border-radius: 10px;
     // background-color: #f0f8ff;
     background-color: white;
-    padding-left: 70px;
+    margin-left: 2%;
   }
 
   #lan_select {
