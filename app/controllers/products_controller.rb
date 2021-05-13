@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
   def index
+    @name_ja = Product.name_ja
+    @name_th = Product.name_th
+    @name_fr_FR = Product.name_fr_FR
+    @name_zh_CN = Product.name_zh_CN
   end
 
   private
