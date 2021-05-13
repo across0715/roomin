@@ -4,12 +4,12 @@ ActiveAdmin.register Product do
   show do |item_image|
     attributes_table do
       row :name
-      row :category
-      row :available
       row :name_ja
       row :name_th
       row :name_fr_FR
       row :name_zh_CN
+      row :category
+      row :available
       # show画面で画像を表示するためのタグを追加
       row :image do
         image_tag(product.image.url)
