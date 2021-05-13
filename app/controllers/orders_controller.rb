@@ -14,7 +14,7 @@ class OrdersController < ApplicationController
         if param[:quantity].to_i > 0
           current_user.orders.create!(param)
           product = Product.find(param[:product_id])
-          t(."messages") << "#{product.name}: #{param[:quantity]}個"
+          messages << "#{product.name}: #{param[:quantity]}個"
         end
         new_order = Order.order(created_at: :desc).first
 

@@ -42,7 +42,7 @@ ja:
       invalid: '%{authentication_keys}またはパスワードが違います。'
       last_attempt: もう一回誤るとアカウントがロックされます。
       locked: アカウントはロックされています。
-      not_found_in_database: '%{authentication_keys}またはパスワードが違います。'
+      not_found_in_database: 'パスワードが違います。'
       timeout: セッションがタイムアウトしました。もう一度ログインしてください。
       unauthenticated: ログインもしくはアカウント登録してください。
       unconfirmed: メールアドレスの本人確認が必要です。
@@ -118,6 +118,7 @@ ja:
         title: ルームサービスアプリです
         greeting: 三井ガーデンホテルへようこそ
         language_select: 言語を選択してください。
+
       signed_in: ログインしました。
       signed_out: ログアウトしました。
     shared:
@@ -143,6 +144,7 @@ ja:
       expired: の有効期限が切れました。新しくリクエストしてください。
       not_found: は見つかりませんでした。
       not_locked: はロックされていません。
+
       not_saved:
         one: エラーが発生したため %{resource} は保存されませんでした。
         other: '%{count} 件のエラーが発生したため %{resource} は保存されませんでした。'
