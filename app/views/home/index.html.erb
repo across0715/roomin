@@ -34,7 +34,7 @@
     <div class="picture_set">
       <% @counter_products.each do |product| %>
         <div class ="img_frame" >
-          <div class= "product_title"><%= t(".#{product.name}") %></div>
+          <div class= "product_title"><%= format_locale_name(product) %></div>
           <% if product.image? %>
             <div class= "p_img"><%= image_tag product.image.url ,class: "img"%></div>
           <% end %>
