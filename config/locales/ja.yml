@@ -1,7 +1,7 @@
 ja:
   activerecord:
     models:
-      
+
 
     attributes:
 
@@ -17,11 +17,8 @@ ja:
       Things_at_the_counter: カウンターでもらえます
       scissors: ハサミ
       cutter knife: カッターナイフ 
-    
-    error:
-      
+      flash_notice: 注文しました.
       order: 注文
-
     order_form:
       available: 貸出し可
       quantity: 数量
@@ -52,8 +49,6 @@ ja:
       Logout: ログアウト
       selecting_language: 言語を選択してください
 
-
-
   activerecord:
     models:
       admin:
@@ -79,12 +74,5 @@ ja:
          
     product: 備品
     user: 注文客名
-    available: 貸出し可
     out_of_stock: 在庫切れ  
-    
-      
 
-      
-    
-  
-    

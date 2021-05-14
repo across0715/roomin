@@ -14,11 +14,11 @@ class OrdersController < ApplicationController
         if param[:quantity].to_i > 0
           current_user.orders.create!(param)
           product = Product.find(param[:product_id])
-          messages << "#{product.name}: #{param[:quantity]}個"
+          messages << "#{product.name}: #{param[:quantity]}"
         end
         new_order = Order.order(created_at: :desc).first
 
-        flash[:notice] = "#{messages.join(", ")} を注文しました。"
+        flash[:notice] = "#{messages.join(", ")} 注文しました。"
       end
     end
     redirect_to root_path
