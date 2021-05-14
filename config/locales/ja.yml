@@ -1,9 +1,18 @@
 ja:
   activerecord:
     models:
-
-
+      product:
     attributes:
+      name:
+        pillow: 枕
+        slippers: スリッパ
+        face towel: フェースタオル
+        tooth brush: 歯ブラシ
+        bath towel: バスタオル
+        blanket: 毛布
+        wine opener: ワイン オプナー
+        shampoo set: シャンプーセット
+
 
   home:
     index:
@@ -19,6 +28,20 @@ ja:
       cutter knife: カッターナイフ 
       flash_notice: 注文しました.
       order: 注文
+      flash:
+        create:
+          order_msg: 注文しました。
+        product:
+          name:
+            pillow: 枕
+            slippers: スリッパ
+            face towel: フェースタオル
+            tooth brush: 歯ブラシ
+            bath towel: バスタオル
+            blanket: 毛布
+            wine opener: ワイン オプナー
+            shampoo set: シャンプーセット
+
     order_form:
       available: 貸出し可
       quantity: 数量
@@ -31,7 +54,11 @@ ja:
       blanket: 毛布
       wine opener: ワイン オプナー
       shampoo set: シャンプーセット
-  
+    flash:
+      
+          
+          
+    
   contacts:
     new:  
       contact_title: お問い合わせ   
