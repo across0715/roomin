@@ -1,4 +1,5 @@
 th:
+  order_msg: 個を注文しました。
   activerecord:
     errors:
       messages:
@@ -41,6 +42,9 @@ th:
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์
       Logout: ออกจากระบบ
       selecting_language: ช่วยเลือกภาษาด้วยครับ
+  contacts:
+    new:
+      contact_title: สอบถาม
   date:
     abbr_day_names:
       - อา

@@ -1,4 +1,5 @@
 zh-CN:
+  order_msg: 订购了。
   activerecord:
     errors:
       messages:
@@ -44,6 +45,9 @@ zh-CN:
       Things_at_the_counter: 柜台上的东西
       Logout: 注销
       selecting_language: 请选择语言
+  contacts:
+    new:
+      contact_title: 咨询
 
   date:
     abbr_day_names:

@@ -1,4 +1,7 @@
 fr-FR:
+  order_msg: J'ai commandé.
+  activerecord:
+    models:
   home:
     index:
       title: Règle d'utilisation
@@ -34,6 +37,9 @@ fr-FR:
       Things_at_the_counter: Disponible au comptoir
       Logout: Logout
       selecting_language: Choisissez la langue.
+  contacts:
+    new:
+      contact_title: Questionner
 
   activerecord:
     errors:

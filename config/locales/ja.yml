@@ -1,7 +1,9 @@
 ja:
+  order_msg: 個を注文しました。
   activerecord:
     models:
-      product:
+      contact:
+        contact_title: お問い合わせ
     attributes:
       name:
         pillow: 枕
