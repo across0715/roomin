@@ -1,5 +1,5 @@
 <div class ="img_frame">
-  <div class= "product_title"><%= format_locale_name(product) %></div>
+  <div class= "product_title"><%= product.name %></div>
   <% if product.image? %>
     <div class= "p_img"><%= image_tag product.image.url ,class: "img"%></div>
   <% end %>

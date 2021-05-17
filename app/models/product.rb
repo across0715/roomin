@@ -3,10 +3,14 @@ class Product < ApplicationRecord
 
   validates :available, inclusion: { in: [true, false] }
   validates :category, presence: true
-  validates :name, presence: true
+  validates :name_en, presence: true
   validates :image, presence: true
 
   has_many :orders, dependent: :destroy
+
+  def name
+    self.send("name_#{I18n.locale}")
+  end
 
   enum category: {
     room: 1,

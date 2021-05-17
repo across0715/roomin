@@ -19,6 +19,7 @@ class OrdersController < ApplicationController
         new_order = Order.order(created_at: :desc).first
 
         flash[:notice] = "#{messages.join(", ")} 注文しました。"
+        flash[:notice] = "#{messages.join(", ")}t(:order_msg)"
       end
     end
     redirect_to root_path

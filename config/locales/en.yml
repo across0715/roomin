@@ -5,7 +5,8 @@ en:
         name:
 
     attributes:
-      category:
+      flash:
+        order_msg: ordered
 
   home:
     index:
@@ -32,6 +33,11 @@ en:
       order: order
       blanket: blanket
       shampoo set: shampoo set
+    orders:
+      create:
+        flash:
+          order_msg: ordered
+
     form_with:
 
   layouts:

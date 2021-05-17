@@ -1,9 +1,9 @@
 ActiveAdmin.register Product do
-  permit_params :name, :category, :image, :available, :name_ja, :name_th, :name_fr_FR, :name_zh_CN
+  permit_params :name_en, :category, :image, :available, :name_ja, :name_th, :name_fr_FR, :name_zh_CN
 
   show do |item_image|
     attributes_table do
-      row :name
+      row :name_en
       row :name_ja
       row :name_th
       row :name_fr_FR
