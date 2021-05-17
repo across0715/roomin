@@ -181,7 +181,7 @@
     border-radius: 10px;
     // background-color: #f0f8ff;
     background-color: white;
-    padding-left: 70px;
+    padding-left: 10px;
   }
   .session_select_item {
     margin-top: 40px;
@@ -283,8 +283,8 @@
   }
 
   #order_button {
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     background-color: #afafed;
     margin-right: auto;
     margin-left: auto;
@@ -296,8 +296,8 @@
 
     text-align: center;
     position: fixed;
-    right: 30px;
-    bottom: 50px;
+    right: 50px;
+    bottom: 100px;
     transition: 0.01s;
     opacity: 0.7;
   }
@@ -307,7 +307,7 @@
     color: white;
     border-radius: 50px;
     font-size: 20px;
-
+    font-weight: bold;
     opacity: 1;
   }
   .product_category {
