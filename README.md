@@ -14,7 +14,7 @@
 従業員も無駄が減るので仕事面で効率化ができると思いこのアプリを制作してみました。
 
 # イメージ画像
-https://github.com/across0715/roomin/issues/15#issue-894209919
+![image]https://github.com/across0715/roomin/issues/15#issue-894209919
 
 # 目次
 
