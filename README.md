@@ -1,24 +1,29 @@
-# README
+# アプリ名: roomin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h4>URL: roomin.herokuapp.com</h4>
 
-Things you may want to cover:
+# どんなアプリか
 
-* Ruby version
+# このアプリでできること
 
-* System dependencies
+# なぜ作ったのか？
 
-* Configuration
+# イメージ画像
 
-* Database creation
+# 目次
 
-* Database initialization
+-
+-
+-
+-
+-
+-
 
-* How to run the test suite
+# 使用技術
+# ER図
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 実装機能
+## （機能一覧）
+# 工夫したポイント
+# 苦労したポイント
+# 今後の課題
