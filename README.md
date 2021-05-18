@@ -1,6 +1,6 @@
 # アプリ名: roomin
 
-<h4> URL: roomin.herokuapp.com</h4>
+<h4> URL: https:roomin.herokuapp.com</h4>
 
 # どんなアプリか
 
