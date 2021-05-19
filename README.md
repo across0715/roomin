@@ -18,7 +18,7 @@
 - アカウント作成なしでログインできるようにQRコードを提供,<br>
 しかし個人を特定するためにユーザーが自分の部屋番号と名前は入力します
 
--<table><tr><td>
+<table><tr><td>
     <img width="777" alt="スクリーンショット 2021-05-19 18 26 47" src="https://user-images.githubusercontent.com/65806682/118789878-2ea1dc00-b8d0-11eb-93f8-cd7f2f468129.png">
 
 </td></tr></table>
