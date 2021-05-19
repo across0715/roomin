@@ -1,4 +1,4 @@
-# アプリ名: :bellhop_bell: roomin
+# アプリ名: :bellhop_bell: roomin :bowtie:
 
 <h4> URL: https://roomin.herokuapp.com</h4>
 
