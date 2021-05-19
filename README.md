@@ -19,7 +19,7 @@
 しかし個人を特定するためにログイン時にユーザーが自分の部屋番号と名前は入力します
 
 <table><tr><td>
-    <img width="777" alt="スクリーンショット 2021-05-19 18 26 47" src="https://user-images.githubusercontent.com/65806682/118789878-2ea1dc00-b8d0-11eb-93f8-cd7f2f468129.png">
+   <img width="747" alt="スクリーンショット 2021-05-19 19 55 23" src="https://user-images.githubusercontent.com/65806682/118801643-349dba00-b8dc-11eb-818d-04f967a63cd3.png">
 
 </td></tr></table>
 
