@@ -1,9 +1,9 @@
 <% @user_list.each do |user| %>
   <p>QRコードで自動パスワード入力できます。</P>
-  <p>You can enter automatic password by QR.</P>
+  <p>You can login with this QR code.</P>
   <p><%= image_tag user[:qr] %></p>
   <p>QRコードが使えない方はURLに接続してパスワードを入力してください。</p>
-  <p>If you dont't have any QR code reader, <br>
+  <p>If you can not use the QR code , <br>
     please connect to the Hotel's URL and enter your password.</p>
   <p>【URL】<%= user[:url] %></p>
   <p>【PASSWORD】<%= user[:password] %></p>
