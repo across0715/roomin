@@ -3,7 +3,8 @@
   <p>You can enter automatic password by QR.</P>
   <p><%= image_tag user[:qr] %></p>
   <p>QRコードが使えない方はURLに接続してパスワードを入力してください。</p>
-  <p>If you cannot use QR codes, please connect to the URL and enter your password.</p>
+  <p>If you dont't have any QR code reader, <br>
+    please connect to the Hotel's URL and enter your password.</p>
   <p>【URL】<%= user[:url] %></p>
   <p>【PASSWORD】<%= user[:password] %></p>
   <p>【有効期限, VALID】<%= (Time.current + 1.month - 1.day).strftime('%Y/%m/%d') %></p>
