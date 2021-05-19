@@ -2,7 +2,7 @@
 
 <h4> URL: https://roomin.herokuapp.com</h4>
 
-# どんなアプリか
+# どんなアプリか:thinking:
 ホテルでルームサービスを頼むときに使えるアプリです
 
 # なぜ作ったのか？
