@@ -1,24 +1,34 @@
-# README
+# アプリ名: roomin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h4> URL: https://roomin.herokuapp.com</h4>
 
-Things you may want to cover:
+# どんなアプリか
+ホテルでルームサービスを頼むときに使えるアプリです
 
-* Ruby version
+# なぜ作ったのか？
+ホテルで働いてる当時、お客さんの６０％以上が全世界からきた外国人でしたが、<br>
+多くの人が、日本人にはわかりづらい英語のアクセントを持っていてコミュニーケーションとるのが難しいことが多く、<br>
+（例えばとても忙しいのにだったの毛布一枚が欲しいとの話を電話で10分もしゃべらないといけなかったりする場面も度々ありました、）<br>
 
-* System dependencies
+各言語で備品の名前があり、写真も入ってる注文アプリがあればお客さんは簡単にルームサービスができるし<br>
+従業員も無駄が減るので仕事面で効率化ができると思いこのアプリを制作してみました。
 
-* Configuration
+# イメージ画像
+<img width="967" alt="qr" src="https://user-images.githubusercontent.com/65806682/118633947-fab1b280-b80c-11eb-9e88-65a5107d1c8f.png">
+# 目次
 
-* Database creation
+-
+-
+-
+-
+-
+-
 
-* Database initialization
+# 使用技術
+# ER図
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 実装機能
+## （機能一覧）
+# 工夫したポイント
+# 苦労したポイント
+# 今後の課題
