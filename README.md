@@ -14,7 +14,7 @@
 従業員も無駄が減るので仕事面で効率化ができると思いこのアプリを制作してみました。
 
 # イメージ画像
-<img width="967" alt="qr" src="https://user-images.githubusercontent.com/65806682/118633947-fab1b280-b80c-11eb-9e88-65a5107d1c8f.png">
+
 # 目次
 
 -
