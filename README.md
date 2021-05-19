@@ -34,12 +34,12 @@
 - 苦労したポイント
 - 今後の課題
 # 使用技術
-HTML/CSS/Sass/Javascript/Vue.js/Ruby on Rails/postgreSQL/AWS
+#### HTML/CSS/Sass/Javascript/Ruby on Rails/postgreSQL/AWS
 
-バージョン
-ruby 2.7.2
-rails 'rails', '~> 6.0.3', '>= 6.0.3.6'
-PostgreSQL 13.2
+##### バージョン
+- ruby 2.7.2
+- rails 'rails', '~> 6.0.3', '>= 6.0.3.6'
+- PostgreSQL 13.2
 
 # ER図
 
