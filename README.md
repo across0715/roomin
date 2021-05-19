@@ -1,8 +1,8 @@
-# アプリ名: roomin
+# アプリ名: :bellhop_bell: roomin
 
 <h4> URL: https://roomin.herokuapp.com</h4>
 
-# どんなアプリか:thinking:
+# :thinking: どんなアプリか
 ホテルでルームサービスを頼むときに使えるアプリです
 
 # なぜ作ったのか？
