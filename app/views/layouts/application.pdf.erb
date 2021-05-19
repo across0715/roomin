@@ -2,14 +2,20 @@
 <html>
   <head>
     <meta charset='utf-8' />
-  </head>
-  <body >
     <style type="text/css">
+      @font-face {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Noto Sans CJK JP')
+      }
       body {
       font-family: Noto Sans JP, sans-serif;
       text-rendering: optimizeLegibility;
       }
-      <%= yield %>
     </style>
+  </head>
+  <body>
+    <%= yield %>
   </body>
 </html>
