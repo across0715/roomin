@@ -41,9 +41,8 @@
 - PostgreSQL 13.2
 
 # ER図
-<table><tr><td>
+
 ![roomin ](https://user-images.githubusercontent.com/65806682/118961248-15b42c00-b99f-11eb-9cf3-08e19dcd9cf1.png)
-</td></tr></table>
 
 
 # 実装機能
