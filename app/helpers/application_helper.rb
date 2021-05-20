@@ -4,8 +4,8 @@ module ApplicationHelper
     [
       { value: :ja, name: "日本語" },
       { value: :en, name: "English" },
-      { value: :"zh-CN", name: "汉语" },
-      { value: :"fr-FR", name: " le français" },
+      { value: :"zh_CN", name: "汉语" },
+      { value: :"fr_FR", name: " le français" },
       { value: :th, name: "ภาษาไทย" },
     ]
   end
