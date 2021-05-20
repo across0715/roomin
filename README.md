@@ -1,5 +1,9 @@
 # アプリ名: :bellhop_bell: roomin 
 
+お問い合わせのimage　サイズを同じに
+flashの国際化
+フォームの文字の間隔調整
+
 <h4> URL: https://roomin.herokuapp.com</h4>
 
 # :thinking: どんなアプリか
@@ -50,3 +54,5 @@
 # 工夫したポイント
 # 苦労したポイント
 # 今後の課題
+
+
