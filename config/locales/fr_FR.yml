@@ -1,4 +1,4 @@
-fr-FR:
+fr_FR:
   order_msg: J'ai commandé.
   activerecord:
     models:
