@@ -44,7 +44,8 @@
 
 # ER図
 
-![roomin ](https://user-images.githubusercontent.com/65806682/118961248-15b42c00-b99f-11eb-9cf3-08e19dcd9cf1.png)
+![er_2](https://user-images.githubusercontent.com/65806682/119441528-372b6400-bd61-11eb-9b58-55b55c0a6300.png)
+
 
 
 # 実装機能
