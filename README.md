@@ -44,7 +44,8 @@
 
 # ER図
 
-![er_2](https://user-images.githubusercontent.com/65806682/119441528-372b6400-bd61-11eb-9b58-55b55c0a6300.png)
+![er_4](https://user-images.githubusercontent.com/65806682/119442148-4232c400-bd62-11eb-9ed2-9e0f468b9b34.png)
+
 
 
 
