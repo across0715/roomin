@@ -43,7 +43,7 @@
 # 実装機能
 | Left-aligned | Center-aligned | Right-aligned | Right-aligned |
 | :---         |     :---:      |     :---:     |           ---:|
-| git status   | git status     | git status    | git status    |
+|    | git status     | git status    | git status    |
 | git diff     | git diff       | git diff      | git status    |
 # 苦労したポイント
 # 今後の課題
