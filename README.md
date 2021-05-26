@@ -43,8 +43,10 @@
 # 実装機能
 | ログイン（devise） |　　　　　　　　 |　　　　　　　　　|　　　　　　　　　|
 | :---         |     :---:      |     :---:     |           ---:|
-|    | git status     | git status    | git status    |
-| git diff     | git diff       | git diff      | git status    |
+|              | ログイン情報     | 　部屋番号　　　        |　　　　　　　　  |　　　　　　　　　
+|   　          |    　　       | password     | git status    |
+|              |      　       | 認証方法カスタマイズ | 新規登録を削る      |
+|             |                |  　　　　　　　　　　| パスワード再設定機能の削除   |
 # 苦労したポイント
 # 今後の課題
 
