@@ -41,13 +41,10 @@
 
 ![er_5](https://user-images.githubusercontent.com/65806682/119584708-1bc56500-be04-11eb-81d9-610a3c9114d5.png)
 # 実装機能
-| ログイン（devise) | ログイン情報 |部屋番号|
-| --- | --- | --- | --- | --- | --- |
-|      |        |       |   名前    |
-|      |        |       |     password  |
-|      |        |       |    認証方法カスタマイズ   |
-|      |        |       |      新規登録機能を消去 |
-# 工夫したポイント
+| Left-aligned | Center-aligned | Right-aligned | Right-aligned |
+| :---         |     :---:      |     :---:     |           ---:|
+| git status   | git status     | git status    | git status    |
+| git diff     | git diff       | git diff      | git status    |
 # 苦労したポイント
 # 今後の課題
 
