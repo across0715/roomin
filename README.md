@@ -41,11 +41,12 @@
 
 ![er_5](https://user-images.githubusercontent.com/65806682/119584708-1bc56500-be04-11eb-81d9-610a3c9114d5.png)
 # 実装機能
-| Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
-
+| ログイン（devise) | ログイン情報 |部屋番号|
+| --- | --- | --- | --- | --- | --- |
+|      |        |       |   名前    |
+|      |        |       |     password  |
+|      |        |       |    認証方法カスタマイズ   |
+|      |        |       |      新規登録機能を消去 |
 # 工夫したポイント
 # 苦労したポイント
 # 今後の課題
