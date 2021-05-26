@@ -22,13 +22,13 @@
 <img width="1266" alt="スクリーンショット 2021-05-25 14 14 00" src="https://user-images.githubusercontent.com/65806682/119585179-22081100-be05-11eb-9d0a-95a43110aeca.png">
 <img width="1117" alt="スクリーンショット 2021-05-25 14 14 39" src="https://user-images.githubusercontent.com/65806682/119585200-29c7b580-be05-11eb-92c0-67a3dc444615.png">
 # 目次
-
 - 使用技術
 - ER 図
 - 実装機能
 - 工夫したポイント
 - 苦労したポイント
 - 今後の課題
+
 # 使用技術
 #### HTML/CSS/Sass/Javascript/Ruby on Rails/postgreSQL/AWS
 
