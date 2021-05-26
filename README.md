@@ -41,7 +41,7 @@
 
 ![er_5](https://user-images.githubusercontent.com/65806682/119584708-1bc56500-be04-11eb-81d9-610a3c9114d5.png)
 # 実装機能
-
+| ログイン（devise） |　　　　　　　　 |　　　　　　　　　|　　　　　　　　　|
 | :---         |     :---:      |     :---:     |           ---:|
 |    | git status     | git status    | git status    |
 | git diff     | git diff       | git diff      | git status    |
