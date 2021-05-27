@@ -40,7 +40,7 @@
 
 # ER図
 
-![er_6](https://user-images.githubusercontent.com/65806682/119750934-3b788e00-bed5-11eb-9feb-427e99b25821.png)
+![er_f](https://user-images.githubusercontent.com/65806682/119762362-8223b380-bee8-11eb-9e72-3f23f8f39f7a.png)
 
 # 実装機能
 ## `ユーザー`
