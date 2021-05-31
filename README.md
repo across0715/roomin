@@ -17,7 +17,7 @@
 
 
 # イメージ画像
-<img width="351" alt="スクリーンショット 2021-05-31 17 12 41" src="https://user-images.githubusercontent.com/65806682/120162725-a4446b00-c233-11eb-8eae-c1e88ee4c4e5.png"><img width="355" alt="スクリーンショット 2021-05-31 17 08 08" src="https://user-images.githubusercontent.com/65806682/120162721-a3133e00-c233-11eb-88a0-372b61ccf6d8.png">
+<img width="347" alt="スクリーンショット 2021-05-31 17 36 09" src="https://user-images.githubusercontent.com/65806682/120165773-e02cff80-c236-11eb-9b5e-f9a14260966b.png"><img width="355" alt="スクリーンショット 2021-05-31 17 08 08" src="https://user-images.githubusercontent.com/65806682/120162721-a3133e00-c233-11eb-88a0-372b61ccf6d8.png">
 
 <img width="1188" alt="スクリーンショット 2021-05-31 16 24 51" src="https://user-images.githubusercontent.com/65806682/120162716-a1497a80-c233-11eb-9acb-fad635e2e0ac.png">
 <img width="1190" alt="スクリーンショット 2021-05-31 16 24 12" src="https://user-images.githubusercontent.com/65806682/120162696-9b539980-c233-11eb-943d-4bb4b831b8cf.png">
