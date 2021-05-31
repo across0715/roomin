@@ -18,10 +18,10 @@
 
 # イメージ画像
 
-<img width="352" alt="スクリーンショット 2021-05-31 16 27 08" src="https://user-images.githubusercontent.com/65806682/120162020-ee791c80-c232-11eb-8a52-001d610e4df0.png"><img width="355" alt="スクリーンショット 2021-05-31 17 08 08" src="https://user-images.githubusercontent.com/65806682/120162061-fa64de80-c232-11eb-91b9-d91d79eac2a7.png">
+<img width="1190" alt="スクリーンショット 2021-05-31 16 24 12" src="https://user-images.githubusercontent.com/65806682/120162696-9b539980-c233-11eb-943d-4bb4b831b8cf.png"><img width="1188" alt="スクリーンショット 2021-05-31 16 24 51" src="https://user-images.githubusercontent.com/65806682/120162716-a1497a80-c233-11eb-9acb-fad635e2e0ac.png">
 
-<img width="1190" alt="スクリーンショット 2021-05-31 16 24 12" src="https://user-images.githubusercontent.com/65806682/120162087-00f35600-c233-11eb-9049-e5594b95db49.png">
-<img width="1188" alt="スクリーンショット 2021-05-31 16 24 51" src="https://user-images.githubusercontent.com/65806682/120162126-0b155480-c233-11eb-8652-f599e0bc8f53.png">
+<img width="355" alt="スクリーンショット 2021-05-31 17 08 08" src="https://user-images.githubusercontent.com/65806682/120162721-a3133e00-c233-11eb-88a0-372b61ccf6d8.png">
+<img width="351" alt="スクリーンショット 2021-05-31 17 12 41" src="https://user-images.githubusercontent.com/65806682/120162725-a4446b00-c233-11eb-8eae-c1e88ee4c4e5.png">
 
 
 # 目次
