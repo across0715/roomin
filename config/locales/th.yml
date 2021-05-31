@@ -12,7 +12,7 @@ th:
       content: การสอบถาม
       contact_email: อีเมล
       contact_img_file: แฟ้มภาพ
-      file_select: เลือกแฟ้ม
+      contact_image: เลือกแฟ้ม
 
   home:
     index:
