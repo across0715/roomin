@@ -17,11 +17,13 @@
 
 
 # イメージ画像
+<img width="351" alt="スクリーンショット 2021-05-31 17 12 41" src="https://user-images.githubusercontent.com/65806682/120162725-a4446b00-c233-11eb-8eae-c1e88ee4c4e5.png"><img width="355" alt="スクリーンショット 2021-05-31 17 08 08" src="https://user-images.githubusercontent.com/65806682/120162721-a3133e00-c233-11eb-88a0-372b61ccf6d8.png">
 
-<img width="352" alt="スクリーンショット 2021-05-31 16 27 08" src="https://user-images.githubusercontent.com/65806682/120156677-2bdaab80-c22d-11eb-975a-0a261d548e51.png"><img width="358" alt="スクリーンショット 2021-05-31 16 27 34" src="https://user-images.githubusercontent.com/65806682/120156692-2e3d0580-c22d-11eb-9543-672ec7a4f1cd.png">
+<img width="1188" alt="スクリーンショット 2021-05-31 16 24 51" src="https://user-images.githubusercontent.com/65806682/120162716-a1497a80-c233-11eb-9acb-fad635e2e0ac.png">
+<img width="1190" alt="スクリーンショット 2021-05-31 16 24 12" src="https://user-images.githubusercontent.com/65806682/120162696-9b539980-c233-11eb-943d-4bb4b831b8cf.png">
 
-<img width="1190" alt="スクリーンショット 2021-05-31 16 24 12" src="https://user-images.githubusercontent.com/65806682/120156706-31d08c80-c22d-11eb-9c13-32126cfac63f.png">
-<img width="1188" alt="スクリーンショット 2021-05-31 16 24 51" src="https://user-images.githubusercontent.com/65806682/120156711-339a5000-c22d-11eb-82a3-6291f0728fa8.png">
+
+
 
 
 # 目次
@@ -53,7 +55,7 @@
 |   　         |password     |                   |        
 |              |認証方法カスタマイズ    | 新規登録を消去      |       
 |   　         |    　　             |パスワード再設定機能の削除|     
-|言語選択      |     i18n   |日本語、英語、中国語（簡体）、タイ語  |      
+|言語選択      |     i18n   |日本語、英語、中国語（簡体）、タイ語、フランス語 |      
 
 |備品申し込み|　 　     　 |　　　　　　　　    　|                   |
 |    ---        | ---        | ---               | ---              |   
