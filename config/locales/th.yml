@@ -5,6 +5,15 @@ th:
       messages:
         record_invalid: 'ไม่ผ่านการตรวจสอบ: %{errors}'
 
+  contacts:
+    new:
+      contact_title: การสอบถาม
+    form:
+      content: การสอบถาม
+      contact_email: อีเมล
+      contact_img_file: แฟ้มภาพ
+      file_select: เลือกแฟ้ม
+
   home:
     index:
       title: ข้อบังคับใช้
@@ -42,9 +51,7 @@ th:
       Things_at_the_counter: ที่มีอยู่บนเคาน์เตอร์
       Logout: ออกจากระบบ
       selecting_language: ช่วยเลือกภาษาด้วยครับ
-  contacts:
-    new:
-      contact_title: สอบถาม
+
   date:
     abbr_day_names:
       - อา
@@ -150,7 +157,7 @@ th:
       prompt: โปรดเลือก
     submit:
       create: สร้าง%{model}
-      submit: บันทึก%{model}
+      submit: บันทึก
       update: ปรับปรุง%{model}
   number:
     currency:

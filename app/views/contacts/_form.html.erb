@@ -2,15 +2,15 @@
   <div class= "inner_contact_form">
     <%= form_with(url: contacts_path, scope: :contact, local: true) do |form| %>
       <div class="field">
-        <%= form.label :content, id: "content_label" %>
+        <%= form.label :content,t(".content"), id: "content_label" %>
         <%= form.text_area :content, required: true ,class: "contact_field"%>
       </div>
       <div class="field">
-        <%= form.label :email,id: "email_label"  %>
+        <%= form.label :email,t(".contact_email"),id: "email_label"  %>
         <%= form.email_field :email, required: true,class: "contact_field"%>
       </div>
       <div class="field_img">
-        <%= form.label :image, "画像ファイル", id: "img_file" %>
+        <%= form.label :image, t(".contact_img_file"), id: "img_file" %>
         <%= form.file_field :image , id: "file_button"%>
       </div>
       <div class="actions">

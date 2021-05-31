@@ -15,6 +15,14 @@ ja:
         wine opener: ワイン オプナー
         shampoo set: シャンプーセット
 
+  contacts:
+    new:
+      contact_title: お問い合わせ
+    form:
+      content: 内容
+      contact_email: メール
+      contact_img_file: イメージファイル
+      file_select: ファイル選択
 
   home:
     index:
@@ -64,8 +72,6 @@ ja:
   contacts:
     new:  
       contact_title: お問い合わせ   
-      post:
-        content: 内容
            
   layouts:
     navbar:

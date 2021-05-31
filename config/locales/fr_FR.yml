@@ -2,6 +2,16 @@ fr_FR:
   order_msg: J'ai commandé.
   activerecord:
     models:
+
+  contacts:
+    new:
+      contact_title: Questionner
+    form:
+      content: Contenu
+      contact_email: Courriel
+      contact_img_file: Image 
+      file_select: Sélection de fichiers
+      
   home:
     index:
       title: Règle d'utilisation
@@ -37,9 +47,8 @@ fr_FR:
       Things_at_the_counter: Disponible au comptoir
       Logout: Logout
       selecting_language: Choisissez la langue.
-  contacts:
-    new:
-      contact_title: Questionner
+ 
+    
 
   activerecord:
     errors:
@@ -194,7 +203,7 @@ fr_FR:
       prompt: Veuillez sélectionner
     submit:
       create: Créer un(e) %{model}
-      submit: Enregistrer ce(tte) %{model}
+      submit: Enregistrer ce(tte) 
       update: Modifier ce(tte) %{model}
   number:
     currency:

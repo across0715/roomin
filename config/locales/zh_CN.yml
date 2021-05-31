@@ -8,6 +8,16 @@ zh_CN:
           has_one: 由于 %{record} 需要此记录，所以无法移除记录
           has_many: 由于 %{record} 需要此记录，所以无法移除记录
 
+  contacts:
+    new:
+      contact_title: 咨询
+      
+    form:
+      content: 内容
+      contact_email: 邮件
+      contact_img_file: 图像文件
+      file_select: 文件选择
+
   home:
     index:
       title: 使用规则
@@ -159,7 +169,7 @@ zh_CN:
       prompt: 请选择
     submit:
       create: 新增%{model}
-      submit: 储存%{model}
+      submit: 储存%
       update: 更新%{model}
   number:
     currency:
