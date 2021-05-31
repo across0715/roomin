@@ -157,7 +157,7 @@ th:
       prompt: โปรดเลือก
     submit:
       create: สร้าง%{model}
-      submit: บันทึก
+      submit: ส่ง
       update: ปรับปรุง%{model}
   number:
     currency:

@@ -203,7 +203,7 @@ fr_FR:
       prompt: Veuillez sélectionner
     submit:
       create: Créer un(e) %{model}
-      submit: Enregistrer ce(tte) 
+      submit: transmission
       update: Modifier ce(tte) %{model}
   number:
     currency:

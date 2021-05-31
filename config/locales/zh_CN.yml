@@ -169,7 +169,7 @@ zh_CN:
       prompt: 请选择
     submit:
       create: 新增%{model}
-      submit: 储存%
+      submit: 发送
       update: 更新%{model}
   number:
     currency:
