@@ -1,15 +1,21 @@
 <h1>新規発行</h1>
 <%= form_with model: @account, url: admin_generate_user_pdf_path, local: true do |form| %>
-  <div>
+  <div class="field">
     <%= hidden_field_tag :format, :pdf %>
     <%= form.label :staff_id, "アカウント生成従業員" %>
     <%= form.collection_select(:staff_id, @generate_staffs, :id, :name) %>
-    <div>
+     <div class="field">
       <%= form.label :user_quantity, "数量" %>
       <%= form.number_field :user_quantity, min: 10, step: 10, value: 10 %>
     </div>
-    <div>
+    <div class="field">
       <%= form.submit "発行" %>
     </div>
   </div>
 <% end %>
+<style>
+  .field {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+</style>
