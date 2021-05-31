@@ -25,7 +25,7 @@ ActiveAdmin.register_page "generate_user_pdf" do
 
       User.create!(user_params_list)
 
-      @base_url = "http://localhost:3000/users/sign_in"
+      @base_url = "http://roomin.herokuapp.com//users/sign_in"
       @user_list = user_params_list.map do |params|
         password = params[:password]
         url = "#{@base_url}?password=#{password}"
