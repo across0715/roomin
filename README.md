@@ -18,6 +18,8 @@
 
 # イメージ画像
   <img width="359" alt="スクリーンショット 2021-05-25 14 11 57" src="https://user-images.githubusercontent.com/65806682/119585163-19173f80-be05-11eb-8dfb-cd49cd0931a0.png">
+  <img width="376" alt="スクリーンショット 2021-05-31 14 41 16" src="https://user-images.githubusercontent.com/65806682/120145414-6d178f00-c21e-11eb-9bdc-11f99f8dc9e8.png">
+
 <img width="788" alt="スクリーンショット 2021-05-25 14 13 43" src="https://user-images.githubusercontent.com/65806682/119585172-1f0d2080-be05-11eb-8440-85c7fe6f51cb.png">
 <img width="1266" alt="スクリーンショット 2021-05-25 14 14 00" src="https://user-images.githubusercontent.com/65806682/119585179-22081100-be05-11eb-9d0a-95a43110aeca.png">
 
