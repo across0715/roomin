@@ -17,10 +17,11 @@
 
 
 # イメージ画像
- <img width="350" alt="スクリーンショット 2021-05-31 15 13 09" src="https://user-images.githubusercontent.com/65806682/120148261-ea450300-c222-11eb-93f7-a1844a9bfed6.png">|<img width="338" alt="スクリーンショット 2021-05-31 15 13 42" src="https://user-images.githubusercontent.com/65806682/120148277-ee712080-c222-11eb-8cee-48fe0c0021ae.png">
 
-<img width="788" alt="スクリーンショット 2021-05-25 14 13 43" src="https://user-images.githubusercontent.com/65806682/119585172-1f0d2080-be05-11eb-8440-85c7fe6f51cb.png">
-<img width="1266" alt="スクリーンショット 2021-05-25 14 14 00" src="https://user-images.githubusercontent.com/65806682/119585179-22081100-be05-11eb-9d0a-95a43110aeca.png">
+<img width="352" alt="スクリーンショット 2021-05-31 16 27 08" src="https://user-images.githubusercontent.com/65806682/120156677-2bdaab80-c22d-11eb-975a-0a261d548e51.png"><img width="358" alt="スクリーンショット 2021-05-31 16 27 34" src="https://user-images.githubusercontent.com/65806682/120156692-2e3d0580-c22d-11eb-9543-672ec7a4f1cd.png">
+
+<img width="1190" alt="スクリーンショット 2021-05-31 16 24 12" src="https://user-images.githubusercontent.com/65806682/120156706-31d08c80-c22d-11eb-9c13-32126cfac63f.png">
+<img width="1188" alt="スクリーンショット 2021-05-31 16 24 51" src="https://user-images.githubusercontent.com/65806682/120156711-339a5000-c22d-11eb-82a3-6291f0728fa8.png">
 
 
 # 目次
@@ -116,7 +117,10 @@
 - ５カ国の言語でアプリが利用できるようにしました。
 
 # 苦労したポイント
-- 
+- ログインの認証をパスワードのみいにしたかったですが，ユーザーを識別するために必要な email の代わりのものが必要だったので<br>
+username をemail の代わりの認証方法に選択しました。ホテルのurlをベースに連番（16進数の）を作ってそこにランダムな6文字を追加したものをpasswordに
+そのpasswordの最初からの６文字をusernameにしpassword を入れたら自動でログインフォームに入るようにしました。ログインフォームのusername欄はユーザーは見えないようにして楽にログインできるイメージを与えました。
+
 # 今後の課題
 - 最初から貸し出せる備品の個数を入れておいて０になったら自動的に"在庫なし"に変わるようにしたいと思います。
 - 実際に貸し出した各備品の個数を集計できるようにしたら、ホテルの経費削減のために役に立つかもしれないと思います。
