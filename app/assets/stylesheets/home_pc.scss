@@ -171,11 +171,11 @@
 
   #in_bath {
     background-color: #f8f8ff;
-    padding-top: 100px;
+    padding-top: 90px;
   }
   #at_counter {
     background-color: #f8f8ff;
-    margin-bottom: 100px;
+    padding-top: 90px;
   }
 
   // 言語box
@@ -262,8 +262,10 @@
     width: 65%;
     object-fit: cover;
   }
-  #in_room {
-  }
+  // #in_room_0 {
+  //   position: absolute;
+  //   top: 600px;
+  // }
 
   #in_room,
   #in_bath,
