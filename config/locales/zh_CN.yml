@@ -11,7 +11,6 @@ zh_CN:
   contacts:
     new:
       contact_title: 咨询
-      
     form:
       content: 内容
       contact_email: 邮件
