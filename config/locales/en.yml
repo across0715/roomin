@@ -23,8 +23,8 @@ en:
       take_responsibility_for: You'll be held responsible for damage to the hotel and others.
       things_to_watch_out_for: Things to watch out for when ordering
       amenity_list: Amenity list
-      Things_in_the_bedroom: Things in the bedroom
-      Things_in_the_bathroom: Things in the bathroom
+      Things_in_the_bedroom: Things in bedrooms
+      Things_in_the_bathroom: Things in bathrooms
       Things_at_the_counter: Things at the counter
       scissors: scissors
       cutter knife: cutter knife
@@ -49,7 +49,7 @@ en:
       Return_to_the_amenity_list: Return to the amenity_list
       contact_form: contact form
       amenity_list: Amenity list
-      Things_in_the_bedroom: Things in the bedroom
-      Things_in_the_bathroom: Things in the bathroom
+      Things_in_the_bedroom: Things in bedrooms
+      Things_in_the_bathroom: Things in bathrooms
       Things_at_the_counter: Things at the counter
       Logout: Logout
