@@ -49,6 +49,8 @@ zh_CN:
       timeout: 登录超时，请重新登录。
       unauthenticated: 继续操作前请注册或者登录。
       unconfirmed: 继续操作前请先确认您的帐户。
+      account_inactive: 非活动账户。
+
     mailer:
       confirmation_instructions:
         action: 确认我的帐户

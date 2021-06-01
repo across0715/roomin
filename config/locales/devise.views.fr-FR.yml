@@ -48,6 +48,7 @@ fr_FR:
       timeout: Votre session est expirée, veuillez vous reconnecter pour continuer.
       unauthenticated: Vous devez vous connecter ou vous enregistrer pour continuer.
       unconfirmed: Vous devez confirmer votre compte par email.
+      account_inactive: Compte non actif。
     mailer:
       confirmation_instructions:
         action: Confirmer mon email
