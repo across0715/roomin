@@ -33,7 +33,7 @@
 - 工夫したポイント
 - 苦労したポイント
 - 今後の課題
-
+- その他の開発アプリ
 # 使用技術
 #### HTML/CSS/Sass/Javascript/Ruby on Rails/postgreSQL/AWS
 
