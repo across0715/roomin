@@ -135,6 +135,5 @@ hiddenにして手軽にログインできる印象を与えました。
 #### 
 ![real](https://user-images.githubusercontent.com/65806682/120424522-7f710480-c3a7-11eb-9c3c-8a8835298c7e.gif)
 
-![sizing_change](https://user-images.githubusercontent.com/65806682/120426121-72a1e000-c3aa-11eb-9a5c-96eae46a3e5a.gif)
 
 
