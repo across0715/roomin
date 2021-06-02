@@ -134,6 +134,4 @@ hiddenにして手軽にログインできる印象を与えました。
 ### 詳細説明。。。。。
 #### 
 
-![k1](https://user-images.githubusercontent.com/65806682/120417506-e982ad00-c399-11eb-8417-ababf0a71eb9.gif)
-![k2](https://user-images.githubusercontent.com/65806682/120417965-b12f9e80-c39a-11eb-895b-8f14b7ea87d4.gif)
 
