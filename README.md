@@ -132,7 +132,5 @@ hiddenにして手軽にログインできる印象を与えました。
 ### 実案件んの管理者ページ全てを実装
 - ３人の共同開発に参加、一人はリーダ役、も一人はユーザーを自分は管理者を担当
 #### 
-![k_1](https://user-images.githubusercontent.com/65806682/120411472-d834a300-c38f-11eb-941c-fda0370004d6.gif)![k_2](https://user-images.githubusercontent.com/65806682/120411486-dc60c080-c38f-11eb-8bb4-d93b7753a025.gif)![k_3](https://user-images.githubusercontent.com/65806682/120411496-dec31a80-c38f-11eb-83e6-c2ecbf65faea.gif)![k_4](https://user-images.githubusercontent.com/65806682/120411501-e08cde00-c38f-11eb-995c-50d9f4bcc3a3.gif)![k_5](https://user-images.githubusercontent.com/65806682/120412742-0adf9b00-c392-11eb-9149-ffa6535d2edc.gif)
-
 
 
