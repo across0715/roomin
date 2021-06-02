@@ -133,6 +133,8 @@ hiddenにして手軽にログインできる印象を与えました。
 - ３人の共同開発に参加、一人はリーダ役、も一人はユーザーを自分は管理者を担当。。。。
 ### 詳細説明。。。。。
 #### 
-![real](https://user-images.githubusercontent.com/65806682/120424522-7f710480-c3a7-11eb-9c3c-8a8835298c7e.gif)![sizing_change](https://user-images.githubusercontent.com/65806682/120426121-72a1e000-c3aa-11eb-9a5c-96eae46a3e5a.gif)
+![real](https://user-images.githubusercontent.com/65806682/120424522-7f710480-c3a7-11eb-9c3c-8a8835298c7e.gif)
+
+![sizing_change](https://user-images.githubusercontent.com/65806682/120426121-72a1e000-c3aa-11eb-9a5c-96eae46a3e5a.gif)
 
 
