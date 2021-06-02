@@ -130,4 +130,6 @@ hiddenにして手軽にログインできる印象を与えました。
 
 #その他のアプリ
 ## 実案件んの管理者ページ実装
+![full_small_1](https://user-images.githubusercontent.com/65806682/120410352-cb16b480-c38d-11eb-9423-bf87b1684659.gif)
+
 
