@@ -4,7 +4,7 @@ ActiveAdmin.register AdminUser do
   controller do
     def guest_sign_in
       # ゲストアカウントでログイン
-      sign_in User.guest
+      sign_in AdminUser.guest
       # トップページへリダイレクト
       redirect_to admin_path, notice: "ゲストユーザーとしてログインしました。"
     end
