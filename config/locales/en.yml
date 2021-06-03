@@ -16,6 +16,7 @@ en:
       contact_email: email
       contact_img_file: Image
       file_select: selecting image
+
   home:
     index:
       title: Usage Regulations
