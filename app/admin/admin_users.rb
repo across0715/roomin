@@ -1,15 +1,6 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirmation
 
-  controller do
-    def guest_sign_in
-      # ゲストアカウントでログイン
-      sign_in AdminUser.guest
-      # トップページへリダイレクト
-      redirect_to admin_path, notice: "ゲストユーザーとしてログインしました。"
-    end
-  end
-
   index do
     selectable_column
     id_column

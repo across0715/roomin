@@ -8,8 +8,8 @@ class AdminUser < ApplicationRecord
   #AdminUserモデルにメソッドを用意していて，AdminUserのインスタンスを渡す。
 
   def self.guest
-    find_or_create_by!(email: "guest@example.com") do |user|
-      AdminUser.password = SecureRandom.urlsafe_base64
+    find_or_create_by!(email: "guest@example.com") do |admin_user|
+      admin_user.password = SecureRandom.urlsafe_base64
     end
   end
 end
