@@ -138,5 +138,9 @@ hiddenにして手軽にログインできる印象を与えました。
 
 # その他のアプリ 2
 ###  友人のサイトをrails tutorial をコピーしてサーバーサイドの機能は実装済み
-https://tokkidesign.herokuapp.com/gallery
+https://tokkidesign.herokuapp.com
+
+###
+<img width="1341" alt="スクリーンショット 2021-07-05 9 17 41" src="https://user-images.githubusercontent.com/65806682/124403533-ebada200-dd71-11eb-985e-ae6eba56bfef.png">
+
 
