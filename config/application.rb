@@ -21,6 +21,8 @@ module HotelRoomServiceApp
     # 上記の対応言語以外の言語が指定された場合、エラーとするかの設定
     config.i18n.enforce_available_locales = true
 
+    config.autoloader = :classic
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
