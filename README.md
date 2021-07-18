@@ -139,7 +139,7 @@ hiddenにして手軽にログインできる印象を与えました。
 
 
 # その他のアプリ 2
-###  友人のサイトをrails tutorial をコピーしてサーバーサイドの機能は実装済み
+###  友人のサイトをrails tutorial をコピーしてサーバーサイドの機能は実装済み、先方の資料を待っていてまだ未完成。
 https://tokkidesign.herokuapp.com
 
 ###
