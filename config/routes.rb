@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   devise_for :admin_users, ActiveAdmin::Devise.config
+  devise_scope :admin_user do
+    post "/admin/guest_sign_in", to: "admin/users/sessions#guest_sign_in"
+  end
+
   devise_for :users, controllers: {
                        sessions: "users/sessions",
                      }
