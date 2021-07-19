@@ -145,7 +145,8 @@ hiddenにして手軽にログインできる印象を与えました。
 ### 苦労したポイント
 - デザイナーが作ったモックアップを参考に同じくcssを実装することになっていました。細かいところも妥協せず写経をするのに苦労した覚えがあります。その時の苦労のおかげで、次のアプリを作る際はとてもスムーズにcssが書けてとても良かったと思います。
 
-![Kapture 2021-06-10 at 13 45 56](https://user-images.githubusercontent.com/65806682/121466415-5e856080-c9f2-11eb-857f-205f4fad8ebd.gif)
+![Kapture 2021-06-10 at 13 45 56](https://user-images.githubusercontent.com/65806682/121466415-5e856080-c9f2-11eb-857f-205f4fad8ebd.gif)![km_top](https://user-images.githubusercontent.com/65806682/126094526-f470ca5b-e11a-47c4-8e8d-b1f87241f89c.gif)
+
 
 
 # その他のアプリ 2（初挑戦アプリ）
