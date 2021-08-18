@@ -1,8 +1,10 @@
 # アプリ名: :bellhop_bell: roomin　(3番目に作ったアプリ)
 
 <h4> URL: https://roomin.herokuapp.com</h4>
-【PASSWORD】b5noljl2n1
-【有効期限, VALID】2021/09/17
+【PASSWORD】b5noljl2n1<br>
+【有効期限, VALID】2021/09/17<br>
+【QR コードログイン】
+<img width="707" alt="スクリーンショット 2021-08-18 9 38 44" src="https://user-images.githubusercontent.com/65806682/129818444-124b943d-49a4-4553-afed-c8063e0e9be9.png">
 
 # :thinking: どんなアプリか
 ホテルでルームサービスを頼むときに使えるアプリです
