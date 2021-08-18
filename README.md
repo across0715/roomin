@@ -5,8 +5,8 @@
 【有効期限, VALID】2021/09/17<br>
 【QR コードログイン】
 <img width="235" alt="スクリーンショット 2021-08-18 9 42 08" src="https://user-images.githubusercontent.com/65806682/129818656-8c694fba-77fe-4c76-829c-04c2b865b99d.png">
-【管理者ログイン】<br>
-https://roomin.herokuapp.com/admin/login ゲストログイン利用可能
+【管理者ログイン】ゲストログイン利用可能<br>
+https://roomin.herokuapp.com/admin/login 
 
 # どんなアプリですか？:thinking: 
 ホテルでルームサービスを頼むときに使えるアプリです
