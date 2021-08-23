@@ -45,7 +45,7 @@ https://roomin.herokuapp.com/admin/login
 
 ##### バージョン
 - ruby 2.7.2
-- rails 'rails', '~> 6.0.3', '>= 6.0.3.6'
+- rails ~> 6.0.3
 - PostgreSQL 13.2
 
 # ER図
@@ -140,7 +140,7 @@ hiddenにして手軽にログインできる印象を与えました。
 
 ##### バージョン
 - ruby '2.6.6'
-- rails 'rails', '~> 6.0.3', '>= 6.0.3.4'
+- rails ~> ’6.0.3'
 - PostgreSQL '13.3'
 # 実装機能
 - 管理者ログイン
