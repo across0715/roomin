@@ -1,0 +1,105 @@
+ko:
+  order_msg: 개주문하셨습니다 
+  activerecord:
+    models:
+      contact:
+        contact_title: 문의
+    attributes:
+      name:
+        pillow: 베개
+        slippers: 슬리퍼
+        face towel: 얼굴타올
+        tooth brush: 칫솔
+        bath towel: 목욕타올
+        blanket: 담요
+        wine opener: 와인오프너
+        shampoo set: 샴푸셋트
+
+  contacts:
+    new:
+      contact_title: お問い合わせ문의
+    form:
+      content: 内容내용
+      contact_email: メール메일
+      contact_img_file: イメージファイル이미지파일
+      file_select: ファイル選択파일선택
+
+  home:
+    index:
+      title: 利用規約이용약관
+      no_damaging_behavior: 타인에게 피해를 주는 행동금지
+      take_responsibility_for: 식당및 타인에게 피해시 법적책임을 물을수 있습니다 
+      things_to_watch_out_for: 주문할때 주의할점
+      amenity_list: 備品リスト비품리스트
+      Things_in_the_bedroom: お部屋にある物방에있는것
+      Things_in_the_bathroom: 風呂場にある物목욕탕에있는것
+      Things_at_the_counter: カウンターでもらえます직접 말씀해 주세요
+      scissors: 
+      cutter knife: 
+      flash_notice: 주문하였습니다 
+      order: 주문하기
+      flash:
+        create:
+          order_msg: 주문하였습니다 
+        product:
+          name:
+            pillow: 
+            slippers: 슬리퍼
+            face towel: 페이스타올
+            tooth brush: 칫솔
+            bath towel: 목욕타올
+            blanket: 담요
+            wine opener: 와인따개
+            shampoo set: 샴푸셋트
+
+    order_form:
+      available: 주문가능
+      quantity: 수량
+      out of stock: 품절되었습니다 
+      pillow: 베개
+      slippers: 슬리퍼
+      face towel: 페이스타올
+      tooth brush: 치솔
+      bath towel: 목욕타올
+      blanket: 담요
+      wine opener: 와인오프너
+      shampoo set: 샴푸셋트
+    flash:
+      
+  layouts:
+    navbar:
+      Return_to_the_amenity_list: 備品リストに戻る
+      contact_form: お問い合わせ
+      amenity_list: 備品リスト
+      Things_in_the_bedroom: お部屋にある物
+      Things_in_the_bathroom: 風呂場にある物
+      Things_at_the_counter: カウンターでもらえます
+      Logout: ログアウト
+      selecting_language: 言語を選択してください
+
+  activerecord:
+    models:
+      admin:
+      order:
+      status:
+        accept: 미대응
+        complete: 대응종료
+        unavailable: 대응불가
+  
+  attributes:
+    id: ID
+    created_at: 作成日時
+    updated_at: 更新日時
+    display: 表示
+    name: 名前
+    category: 種類
+    image: イメージ
+    orders: 注文
+    room_number: 部屋番号
+    used: 利用中
+    body: 本文
+    accept: 未対応
+         
+    product: 備品
+    user: 注文客名
+    out_of_stock: 在庫切れ  
