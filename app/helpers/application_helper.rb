@@ -1,6 +1,6 @@
 module ApplicationHelper
   def selectable_locale_list
-    # [:en, :ja, :th, :"fr-FR", :"zh-CN"]
+    # [:ko, :en, :ja, :th, :"fr-FR", :"zh-CN"]
     [
       { value: :ko, name: "한국어" },
       { value: :ja, name: "日本語" },

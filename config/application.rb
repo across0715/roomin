@@ -17,7 +17,7 @@ module HotelRoomServiceApp
     # 言語ファイルを階層ごとに設定するための記述
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}").to_s]
     # アプリケーションが対応している言語のホワイトリスト(ja = 日本語, en = 英語)
-    config.i18n.available_locales = %i(ja en zh_CN th fr_FR)
+    config.i18n.available_locales = %i(ko ja en zh_CN th fr_FR)
     # 上記の対応言語以外の言語が指定された場合、エラーとするかの設定
     config.i18n.enforce_available_locales = true
 

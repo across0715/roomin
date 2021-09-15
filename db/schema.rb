@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_17_035420) do
+ActiveRecord::Schema.define(version: 2021_09_15_001426) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,6 +75,7 @@ ActiveRecord::Schema.define(version: 2021_05_17_035420) do
     t.string "name_th"
     t.string "name_zh_CN"
     t.string "name_fr_FR"
+    t.string "name_ko"
   end
 
   create_table "staffs", force: :cascade do |t|
